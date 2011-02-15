@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+0 Strict//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -35,14 +35,14 @@
 </head>
 
 <body>
-  <a href="http://github.com/testaltrabio1/altrabioCVI"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+  <a href="http://github.com/altrabio/CITIEsForRAILS"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 
   <div id="container">
 
     <div class="download">
-      <a href="http://github.com/testaltrabio1/altrabioCVI/zipball/master">
+      <a href="http://github.com/altrabio/CITIEsForRAILS/zipball/master">
         <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/testaltrabio1/altrabioCVI/tarball/master">
+      <a href="http://github.com/altrabio/CITIEsForRAILS/tarball/master">
         <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
     </div>
 
@@ -654,7 +654,7 @@ won't get here into a deep technical explanation of how our solution
 works but just give some very low level insights (maybe in near
 future we'll provide some more details ; yet, interested reader
 should refer to our commentated code, which can be grabbed <a
-href="https://github.com/testaltrabio1/test-application-for-AltrabioCVI">here</a>).  Thereafter, we first introduce features offered by
+href="https://github.com/altrabio/test-application-for-AltrabioCVI">here</a>).  Thereafter, we first introduce features offered by
 our solution, give some brief informations related to the basic ideas
 that drove us for implementing this solution, and finally explain how
 to use it. Obviously, the explanations concerning the implementation
@@ -682,7 +682,7 @@ A Full Featured Solution</B></FONT></FONT></FONT></P>
 	solution is firstly based on Ruby's class inheritance. For our
 	example, the inheritance hierachy is the one that a programmer would
 	expect (<a
-href="http://testaltrabio1.github.com/altrabioCVI/index.html#classhierarchy">see it here</a>).  This means that if you have defined some instance
+href="http://altrabio.github.com/CITIEsForRAILS/index.html#classhierarchy">see it here</a>).  This means that if you have defined some instance
 	methods/variables or class methods/variables in a superclass you can
 	have a natural access to it. This also means that a real "is_a"
 	relationship is used and that multi level inheritance hierarchy can
@@ -753,7 +753,7 @@ Solution Philosophy at a glance</B></FONT></FONT></FONT></P>
 <P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">The
 philosophy used to implement this solution is the following, for each
 node of the class hierarchy (<a
-href="http://testaltrabio1.github.com/altrabioCVI/index.html#classhierarchy">see it here</a>) (does not depend on the
+href="http://altrabio.github.com/CITIEsForRAILS/index.html#classhierarchy">see it here</a>) (does not depend on the
 fact that it has or not any specific attribute) we would like to use
 ActiveRecord facilities to manipulate it (this means using
 ActiveRecord facilities to save an object, update an object, load an
@@ -762,7 +762,7 @@ classically ActiveRecords would imply to use a specific table for
 each class, yet this would not respect the constraints required
 related to the storage. (this would not fit with our database schema
 constraints defined before, <a
-href="http://testaltrabio1.github.com/altrabioCVI/index.html#databaseschema">see it here</a>). </SPAN></SPAN></FONT></FONT></FONT>
+href="http://altrabio.github.com/CITIEsForRAILS/index.html#databaseschema">see it here</a>). </SPAN></SPAN></FONT></FONT></FONT>
 </P>
 <P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">So
 what we propose here is just to have a mechanism that fake the
@@ -792,7 +792,7 @@ what happen behind the curtains when using our gem :</FONT></FONT></FONT></P>
 
 
 <B>  <a
-href="http://testaltrabio1.github.com/altrabioCVI/index.html#classhierarchy">
+href="http://altrabio.github.com/CITIEsForRAILS/index.html#classhierarchy">
 See class hierarchy here </a>   </B>
 
 
@@ -802,7 +802,7 @@ See class hierarchy here </a>   </B>
 
 
 <B>  <a
-href="http://testaltrabio1.github.com/altrabioCVI/index.html#databaseschema">
+href="http://altrabio.github.com/CITIEsForRAILS/index.html#databaseschema">
 See database schema here </a>   </B>
 
 
@@ -833,7 +833,7 @@ CITIEsForRails User's Guide</B></FONT></FONT></FONT></P>
 give here the  details to use our solution. Note that a functional
 web app implementing the multimedia library example is available 
 <a
-href="https://github.com/testaltrabio1/test-application-for-AltrabioCVI">here</a>. It may be worth having a look at it since each
+href="https://github.com/altrabio/test-application-for-AltrabioCVI">here</a>. It may be worth having a look at it since each
 specific code entry necessitated by the use of our plugin has been
 associated with a “#needed for CITIEsForRails” comment. Moreover
 some extra Comments &amp; BookComments objects have been added to
@@ -848,7 +848,7 @@ should follow the next steps to use <B>CITIEsForRails :</B> </FONT></FONT></FONT
 <OL>
 	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Model
 	your class inheritance hierarchy (<a
-href="http://testaltrabio1.github.com/altrabioCVI/index.html#classhierarchy">see for instance our example</a>)</SPAN></SPAN></FONT></FONT></FONT></P>
+href="http://altrabio.github.com/CITIEsForRAILS/index.html#classhierarchy">see for instance our example</a>)</SPAN></SPAN></FONT></FONT></FONT></P>
 	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Once
 	your class inheritance hierarchy is modeled : determine what we will
 	call the role of each class. There are 3 kind of roles : </SPAN></SPAN></FONT></FONT></FONT>
@@ -880,7 +880,7 @@ href="http://testaltrabio1.github.com/altrabioCVI/index.html#classhierarchy">see
 	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Once
 	roles are determined : determine the database schema (it is better
 	if this schema is such that it avoids duplication (<a
-href="http://testaltrabio1.github.com/altrabioCVI/index.html#databaseschema">see for instance our example</a>). Note that the table associated to
+href="http://altrabio.github.com/CITIEsForRAILS/index.html#databaseschema">see for instance our example</a>). Note that the table associated to
 	the mother class requires one extra columns that we will call
 	inheritance_column (our solution uses notably Rails Single Table
 	Inheritance facility). (To sum up : the “mother class”
@@ -917,27 +917,27 @@ href="http://testaltrabio1.github.com/altrabioCVI/index.html#databaseschema">see
 	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Determine
 	views that are needed (one per ”class with specific attribute(s)”)
 	(<a
-href="http://testaltrabio1.github.com/altrabioCVI/index.html#databaseview">see for instance our example</a>) . Such views may be
-	created thanks to the provided function CreateTheViewForCVI(class)
-	or dropped with the provided function DropTheViewForCVI(class) . </SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><I><SPAN STYLE="font-weight: normal">For
+href="http://altrabio.github.com/CITIEsForRAILS/index.html#databaseview">see for instance our example</a>) . Such views may be
+	created thanks to the provided function CreateTheViewForCITIEs(class)
+	or dropped with the provided function DropTheViewForCITIEs(class) . </SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><I><SPAN STYLE="font-weight: normal">For
 	our example, this mean that we need 5 views :</SPAN></I></FONT></FONT></FONT></P>
 
 </OL>
 <UL>
 	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>View
-	view_audios (which may be generated by CreateTheViewForCVI(Audio))</FONT></FONT></FONT></P>
+	view_audios (which may be generated by CreateTheViewForCITIEs(Audio))</FONT></FONT></FONT></P>
 	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">View
-	view_videos (which may be generated by CreateTheViewForCVI(Video))</SPAN></SPAN></FONT></FONT></FONT></P>
+	view_videos (which may be generated by CreateTheViewForCITIEs(Video))</SPAN></SPAN></FONT></FONT></FONT></P>
 	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">View
 	view_tablebooks (which may be generated by
-	CreateTheViewForCVI(Book))</SPAN></SPAN></FONT></FONT></FONT></P>
+	CreateTheViewForCITIEs(Book))</SPAN></SPAN></FONT></FONT></FONT></P>
 	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">View
-	view_novels (which may be generated by CreateTheViewForCVI(Novel))</SPAN></SPAN></FONT></FONT></FONT></P>
+	view_novels (which may be generated by CreateTheViewForCITIEs(Novel))</SPAN></SPAN></FONT></FONT></FONT></P>
 	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT SIZE=3><FONT FACE="Optima-Regular, sans-serif"><FONT COLOR="#262626"><SPAN STYLE="font-weight: normal"><SPAN STYLE="font-style: normal">View
 	view_dictionaries </SPAN></SPAN></FONT></FONT></FONT><FONT SIZE=3><FONT FACE="Optima-Regular, sans-serif"><FONT COLOR="#262626"><SPAN STYLE="font-weight: normal"><SPAN STYLE="font-style: normal"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">(which
 	may be G</SPAN></SPAN></FONT></FONT></FONT></SPAN></SPAN></FONT></FONT></FONT><SPAN STYLE="font-weight: normal"><SPAN STYLE="font-style: normal"><FONT SIZE=3><FONT FACE="Optima-Regular, sans-serif"><FONT COLOR="#262626">enerated
-	by CreateTheViewForCVI(Dictionary))</FONT></FONT></FONT></SPAN></SPAN></P>
+	by CreateTheViewForCITIEs(Dictionary))</FONT></FONT></FONT></SPAN></SPAN></P>
 </UL>
 <OL START=5>
 	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
@@ -1000,14 +1000,14 @@ href="http://testaltrabio1.github.com/altrabioCVI/index.html#databaseview">see f
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
-	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">self.CreateTheViewForCVI(Book)</FONT></FONT></FONT></P>
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">self.CreateTheViewForCITIEs(Book)</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">def
 	self.down</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
-	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">self.DropTheViewForCVI(Book)</FONT></FONT></FONT></P>
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">self.DropTheViewForCITIEs(Book)</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">drop_table
 	:books</FONT></FONT></FONT></P>
@@ -1035,14 +1035,14 @@ href="http://testaltrabio1.github.com/altrabioCVI/index.html#databaseview">see f
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
-	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">CreateTheViewForCVI(Dictionary)</FONT></FONT></FONT></P>
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">CreateTheViewForCITIEs(Dictionary)</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">def
 	self.down</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
-	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">DropTheViewForCVI(Dictionary)</FONT></FONT></FONT></P>
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">DropTheViewForCITIEs(Dictionary)</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">drop_table
 	:dictionaries</FONT></FONT></FONT></P>
@@ -1067,14 +1067,14 @@ href="http://testaltrabio1.github.com/altrabioCVI/index.html#databaseview">see f
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
-	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">CreateTheViewForCVI(Novel)</FONT></FONT></FONT></P>
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">CreateTheViewForCITIEs(Novel)</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626"> <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">def
 	self.down</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
-	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">DropTheViewForCVI(Novel)</FONT></FONT></FONT></P>
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">DropTheViewForCITIEs(Novel)</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">drop_table
 	:novels</FONT></FONT></FONT></P>
@@ -1102,14 +1102,14 @@ href="http://testaltrabio1.github.com/altrabioCVI/index.html#databaseview">see f
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
-	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">CreateTheViewForCVI(Video)</FONT></FONT></FONT></P>
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">CreateTheViewForCITIEs(Video)</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">def
 	self.down</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
-	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">DropTheViewForCVI(Video)</FONT></FONT></FONT></P>
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">DropTheViewForCITIEs(Video)</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">drop_table
 	:videos</FONT></FONT></FONT></P>
@@ -1137,14 +1137,14 @@ href="http://testaltrabio1.github.com/altrabioCVI/index.html#databaseview">see f
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
-	<FONT COLOR="#262626">     <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">CreateTheViewForCVI(Audio)</FONT></FONT></FONT></P>
+	<FONT COLOR="#262626">     <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">CreateTheViewForCITIEs(Audio)</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">def
 	self.down</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
-	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">DropTheViewForCVI(Audio)</FONT></FONT></FONT></P>
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">DropTheViewForCITIEs(Audio)</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">drop_table
 	:audios</FONT></FONT></FONT></P>
@@ -1156,7 +1156,7 @@ href="http://testaltrabio1.github.com/altrabioCVI/index.html#databaseview">see f
 	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">#--------------------------------------</FONT></FONT></FONT></P>
 	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Now
 	you have to indicate for each classes its role. This is done into
-	your models definitions by adding the special phrase : “acts_as_cvi”
+	your models definitions by adding the special phrase : “acts_as_cities”
 	only for the mother_class and for each ”class with specific
 	attribute(s)”. This special phrase may be accompanied by an
 	optional option hash :
@@ -1171,7 +1171,7 @@ href="http://testaltrabio1.github.com/altrabioCVI/index.html#databaseview">see f
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">class
 	Media &lt; ActiveRecord::Base</SPAN></SPAN></FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626">
-	 <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">acts_as_cvi
+	 <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">acts_as_cities
 		#default values are used there since the table associated to Media
 	class is medias and the inheritance column is named type</SPAN></SPAN></FONT></FONT></FONT></P>
 	<OL>
@@ -1195,7 +1195,7 @@ href="http://testaltrabio1.github.com/altrabioCVI/index.html#databaseview">see f
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><FONT COLOR="#262626">class
 	Audio &lt; Media</FONT></FONT></FONT></SPAN></SPAN></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
-	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">acts_as_cvi</FONT></FONT></FONT></P>
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">acts_as_cities</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
@@ -1209,7 +1209,7 @@ href="http://testaltrabio1.github.com/altrabioCVI/index.html#databaseview">see f
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal"><FONT SIZE=1 STYLE="font-size: 8pt">class
 	Book &lt; Media</FONT></SPAN></SPAN></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626">
-	 <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">acts_as_cvi
+	 <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">acts_as_cities
 	:table_name=&gt;'tablebooks'   #here we need to specify
 	:table_name=&gt;'books' since the table associated to Book class is
 	tablebooks and not book</SPAN></SPAN></FONT></FONT></FONT></P>
@@ -1221,7 +1221,7 @@ href="http://testaltrabio1.github.com/altrabioCVI/index.html#databaseview">see f
 	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">class
 	Dictionary &lt; Book</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
-	<FONT COLOR="#262626"> <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">acts_as_cvi</FONT></FONT></FONT></P>
+	<FONT COLOR="#262626"> <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">acts_as_cities</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
@@ -1230,7 +1230,7 @@ href="http://testaltrabio1.github.com/altrabioCVI/index.html#databaseview">see f
 	Novel &lt; Book</SPAN></SPAN></FONT></FONT></FONT></P>
 	<OL>
 		<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
-		<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">acts_as_cvi</FONT></FONT></FONT></P>
+		<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">acts_as_cities</FONT></FONT></FONT></P>
 	</OL>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
@@ -1252,7 +1252,7 @@ href="http://testaltrabio1.github.com/altrabioCVI/index.html#databaseview">see f
 	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">class
 	Video &lt; Media</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
-	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">acts_as_cvi</FONT></FONT></FONT></P>
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">acts_as_cities</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626"> <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
