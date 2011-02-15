@@ -20,7 +20,7 @@ module Cities
         
         
         db_type_field = (options[:db_type_field] || :type).to_s         #:db_type_field = option for setting the inheritance columns, default value = 'type'
-        table_name = (options[:table_name] || self.name.tableize).to_s  #:table_name = option for setting the name of the current class table_name, default value = 'tableized(current class name)'
+        table_name = (options[:table_name] || self.name.tableize.gsub(/\//,'_')).to_s  #:table_name = option for setting the name of the current class table_name, default value = 'tableized(current class name)'
 
         set_inheritance_column "#{db_type_field}"
 
