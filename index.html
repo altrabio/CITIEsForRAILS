@@ -1,77 +1,1333 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset='utf-8'>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-  <title>altrabio/CITIEsForRAILS @ GitHub</title>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #563a13;
-      font-family: "Helvetica,Arial,FreeSans";
-      color: #ffffff;
+<img id="logo" src="http://altrabio.com/images/Logo_AltraBio.gif">
+
+	<title>testaltrabio1/altrabioCVI @ GitHub</title>
+
+	<style type="text/css">
+		body {
+  		margin-top: 1.0em;
+  		background-color: #8098b0;
+		  font-family: "Helvetica,Arial,FreeSans";
+  		color: #000000;
     }
     #container {
       margin: 0 auto;
       width: 700px;
     }
-    h1 { font-size: 3.8em; color: #a9c5ec; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #a9c5ec; }
-    h3 { text-align: center; color: #a9c5ec; }
-    a { color: #a9c5ec; }
+		h1 { font-size: 3.8em; color: #231d1b; margin-bottom: 3px; }
+		h1 .small { font-size: 0.4em; }
+		h1 a { text-decoration: none }
+		h2 { font-size: 1.5em; color: #231d1b; }
+    h3 { text-align: center; color: #231d1b; }
+    a { color: #231d1b; }
     .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
     .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
+		pre { background: #000; color: #fff; padding: 15px;}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
+	</style>
+
 </head>
 
 <body>
-  <a href="http://github.com/altrabio/CITIEsForRAILS"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+  <a href="http://github.com/testaltrabio1/altrabioCVI"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 
   <div id="container">
 
     <div class="download">
-      <a href="http://github.com/altrabio/CITIEsForRAILS/zipball/master">
+      <a href="http://github.com/testaltrabio1/altrabioCVI/zipball/master">
         <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/altrabio/CITIEsForRAILS/tarball/master">
+      <a href="http://github.com/testaltrabio1/altrabioCVI/tarball/master">
         <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
     </div>
 
-    <h1><a href="http://github.com/altrabio/CITIEsForRAILS">CITIEsForRAILS</a>
-      <span class="small">by <a href="http://github.com/altrabio">altrabio</a></span></h1>
 
-    <div class="description">
-      You will find here a solution that extends Multiple / Single Table Inheritance & Class Table Inheritance.  This solution is based on classical class inheritance, single table inheritance as well as DB views. 
-    </div>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; line-height: 100%">
+<BR><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; line-height: 200%">
+<FONT COLOR="#262626"><FONT FACE="Optima"><FONT SIZE=6 STYLE="font-size: 26pt"><B> Ruby
+Class Inheritance &amp; <br/> Multiple Table Inheritance Embeddings : </B></FONT></FONT></FONT>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; line-height: 200%">
+<FONT COLOR="#262626"><FONT FACE="Optima"><FONT SIZE=6 STYLE="font-size: 26pt"><B>		A
+full featured solution <br/> based on Ruby Class Inheritance &amp; Views</B></FONT></FONT></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; line-height: 100%">
+<BR><BR>
+</P>
+<P ALIGN=RIGHT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#535353"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=4><I><A HREF="http://www.altrabio.com/">ALTRABio</A>,
+February 11th 2011</I></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Monaco, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">&nbsp;&nbsp;&nbsp;</SPAN></SPAN></FONT></FONT></FONT></P>
+<P ALIGN=RIGHT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#535353"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=4><I>The
+</I></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><B>CITIEsForRails
+</B></SPAN></FONT></FONT></FONT><FONT COLOR="#535353"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=4><I>gem
+is delivered</I></FONT></FONT></FONT></P>
+<P ALIGN=RIGHT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#535353"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=4><I>by
+ALTRABio under MIT License</I></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Monaco, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">&nbsp;&nbsp;</SPAN></SPAN></FONT></FONT></FONT></P>
+<P ALIGN=RIGHT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#535353"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=4><I>Authors
+: L. Buffat, P.E. Jouve</I></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Monaco, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN></SPAN></FONT></FONT></FONT></P>
+<P ALIGN=RIGHT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#535353"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=4><I>Contact
+: citiesforrails”?”altrabio.com</I></FONT></FONT></FONT></P>
+<P ALIGN=RIGHT STYLE="margin-bottom: 0.74cm; line-height: 100%"><BR><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><BR><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">When
+trying to model a real world problem that needs some information
+storage into databases, programmers often face the issue which
+consists in mapping objects to relational databases (see for instance
+<A HREF="http://www.agiledata.org/essays/mappingObjects.html">here</A>).
+After a short (and not exhaustive) review of Rails existing solutions
+we propose a new solution which has been bundled into a gem called :
+</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><B>CITIEsForRails</B></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><B>C</B></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=2><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">lass</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><B>I</B></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=2><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">nheritance</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=2><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">&amp;</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><B>T</B></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=2><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">able</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><B>I</B></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=2><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">nheritance</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><B>E</B></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=2><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">mbedding</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><B>s
+For Rails</B></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">.
+</SPAN></SPAN></FONT></FONT></FONT>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">The
+form of this article is deeply inspired by </SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#29607a"><FONT FACE="Georgia, serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal"><A HREF="http://mediumexposure.com/multiple-table-inheritance-active-record/">Multiple
+Table Inheritance with ActiveRecord by Maxim Chernyak</A> ( </SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">should
+ask him if it is a problem)</SPAN></SPAN></FONT></FONT></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT SIZE=4 STYLE="font-size: 16pt"><B><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal">1.
+Problem Statement :</SPAN></FONT></FONT></B></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; background: transparent; line-height: 100%; page-break-before: auto">
+<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Imagine
+writing a multimedia library app with different types of medias (for
+example : </SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Audio</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">,
+</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Mp3</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">,
+</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Video</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">,
+</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Book</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">,
+</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Novel</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">,
+</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Dictionary</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">,
+</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Pocket_Dictionary</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">,
+and </SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Unknown</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+medias) . </SPAN></SPAN></FONT></FONT>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; background: transparent; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Normally
+all </SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Medias</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+would have common attributes such as </SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">name</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+and </SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">price</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">.
+</SPAN></SPAN></FONT></FONT></FONT>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; background: transparent; line-height: 100%">
+<FONT SIZE=3><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Some
+attributes will likely differ : </SPAN></SPAN></FONT></FONT></FONT>
+</P>
+<UL>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; background: transparent; line-height: 100%">
+	<FONT SIZE=3><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Audio</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+	medias may have a </SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">title</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+	and a genre,</SPAN></SPAN></FONT></FONT></FONT></P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; background: transparent; line-height: 100%">
+	<FONT SIZE=3><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Mp3</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+	medias may have a </SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">title</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+	and a genre,</SPAN></SPAN></FONT></FONT></FONT></P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; background: transparent; line-height: 100%">
+	<FONT SIZE=3><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Video</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+	medias could have a </SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">title</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+	and a </SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">genre</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">,
+	</SPAN></SPAN></FONT></FONT></FONT>
+	</P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; background: transparent; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Book</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+	medias may have an </SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">author</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+	and a </SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">title</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">,
+	</SPAN></SPAN></FONT></FONT>
+	</P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; background: transparent; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Dictionary</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+	medias may have an </SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">author,</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+	a </SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">title</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">,
+	and two languages </SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">language1</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+	and </SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">language2</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">.
+	</SPAN></SPAN></FONT></FONT>
+	</P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; background: transparent; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Novel</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+	medias may have an </SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">author,</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+	a </SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">title</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">,
+	and a summary. </SPAN></SPAN></FONT></FONT>
+	</P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; background: transparent; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Pocket_Dictionary</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+	medias may have an </SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">author,</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+	a </SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">title</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">,
+	and two languages </SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">language1</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+	and </SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">language2</SPAN></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">.
+	</SPAN></SPAN></FONT></FONT>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; background: transparent; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">You
+	can easily infer that Audio is a Media, MP3 is an Audio Media, Video
+	is a Media, Unknown is a Media, Book is a Media, Dictionary is a
+	Book, Novel is a Book and Pocket Dictionary is a Dictionary. When
+	this type of relationship is being programmed, we generally use
+	inheritance. If we consider that they should be stored into a
+	database, this would look like  as follows :</SPAN></SPAN></FONT></FONT></FONT></P>
+	<TABLE WIDTH=1076 BORDER=0 CELLPADDING=4 CELLSPACING=0>
+		<COL WIDTH=284>
+		<COL WIDTH=776>
+		<TR VALIGN=TOP>
+			<TD WIDTH=284>
+				<P STYLE="margin-bottom: 0cm"><FONT COLOR="#000000">&nbsp; </FONT><FONT SIZE=2 STYLE="font-size: 9pt"><FONT COLOR="#044e90"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">class</SPAN></SPAN></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+				Media &lt; </SPAN></SPAN></FONT></FONT><FONT COLOR="#006d6d"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">ActiveRecord::Base</SPAN></SPAN></FONT></FONT></FONT></P>
+				<P STYLE="margin-bottom: 0cm"><FONT COLOR="#000000">&nbsp; </FONT><FONT SIZE=2 STYLE="font-size: 9pt"><FONT COLOR="#044e90"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">end</SPAN></SPAN></FONT></FONT></FONT></P>
+				<P STYLE="margin-bottom: 0cm"><FONT COLOR="#000000">&nbsp; </FONT><FONT SIZE=2 STYLE="font-size: 9pt"><FONT COLOR="#044e90"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">class</SPAN></SPAN></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+				Audio &lt; Media</SPAN></SPAN></FONT></FONT></FONT></P>
+				<P STYLE="margin-bottom: 0cm"><FONT COLOR="#000000">&nbsp; </FONT><FONT SIZE=2 STYLE="font-size: 9pt"><FONT COLOR="#044e90"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">end</SPAN></SPAN></FONT></FONT></FONT></P>
+				<P STYLE="margin-bottom: 0cm"><FONT COLOR="#000000">&nbsp; </FONT><FONT SIZE=2 STYLE="font-size: 9pt"><FONT COLOR="#044e90"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">class</SPAN></SPAN></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+				Mp3 &lt; Audio</SPAN></SPAN></FONT></FONT></FONT></P>
+				<P STYLE="margin-bottom: 0cm"><FONT COLOR="#000000">&nbsp; </FONT><FONT SIZE=2 STYLE="font-size: 9pt"><FONT COLOR="#044e90"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">end</SPAN></SPAN></FONT></FONT></FONT></P>
+				<P STYLE="margin-bottom: 0cm"><FONT COLOR="#000000">&nbsp; </FONT><FONT SIZE=2 STYLE="font-size: 9pt"><FONT COLOR="#044e90"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">class</SPAN></SPAN></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+				Video &lt; Media</SPAN></SPAN></FONT></FONT></FONT></P>
+				<P STYLE="margin-bottom: 0cm"><FONT COLOR="#000000">&nbsp; </FONT><FONT SIZE=2 STYLE="font-size: 9pt"><FONT COLOR="#044e90"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">end</SPAN></SPAN></FONT></FONT></FONT></P>
+				<P STYLE="margin-bottom: 0cm"><FONT COLOR="#000000">&nbsp; </FONT><FONT SIZE=2 STYLE="font-size: 9pt"><FONT COLOR="#044e90"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">class</SPAN></SPAN></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+				Book &lt; Media</SPAN></SPAN></FONT></FONT></FONT></P>
+				<P STYLE="margin-bottom: 0cm"><FONT COLOR="#000000">&nbsp; </FONT><FONT SIZE=2 STYLE="font-size: 9pt"><FONT COLOR="#044e90"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">end</SPAN></SPAN></FONT></FONT></FONT></P>
+				<P STYLE="margin-bottom: 0cm"><FONT COLOR="#000000">&nbsp; </FONT><FONT SIZE=2 STYLE="font-size: 9pt"><FONT COLOR="#044e90"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">class</SPAN></SPAN></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+				Novel &lt;  Book</SPAN></SPAN></FONT></FONT></FONT></P>
+				<P STYLE="margin-bottom: 0cm"><FONT COLOR="#000000">&nbsp; </FONT><FONT SIZE=2 STYLE="font-size: 9pt"><FONT COLOR="#044e90"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">end</SPAN></SPAN></FONT></FONT></FONT></P>
+				<P STYLE="margin-bottom: 0cm"><FONT COLOR="#000000">&nbsp; </FONT><FONT SIZE=2 STYLE="font-size: 9pt"><FONT COLOR="#044e90"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">class</SPAN></SPAN></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+				Dictionary &lt;  Book</SPAN></SPAN></FONT></FONT></FONT></P>
+				<P STYLE="margin-bottom: 0cm"><FONT COLOR="#000000">&nbsp; </FONT><FONT SIZE=2 STYLE="font-size: 9pt"><FONT COLOR="#044e90"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">end</SPAN></SPAN></FONT></FONT></FONT></P>
+				<P STYLE="margin-bottom: 0cm"><FONT COLOR="#000000">&nbsp; </FONT><FONT SIZE=2 STYLE="font-size: 9pt"><FONT COLOR="#044e90"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">class</SPAN></SPAN></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+				PocketDictionary &lt;  Dictionary</SPAN></SPAN></FONT></FONT></FONT></P>
+				<P STYLE="margin-bottom: 0cm"><FONT COLOR="#000000">&nbsp; </FONT><FONT SIZE=2 STYLE="font-size: 9pt"><FONT COLOR="#044e90"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">end</SPAN></SPAN></FONT></FONT></FONT></P>
+				<P STYLE="margin-bottom: 0cm"><FONT COLOR="#000000">&nbsp; </FONT><FONT SIZE=2 STYLE="font-size: 9pt"><FONT COLOR="#044e90"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">class</SPAN></SPAN></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+				Unknown &lt;  Media</SPAN></SPAN></FONT></FONT></FONT></P>
+				<P STYLE="margin-bottom: 0cm"><FONT COLOR="#000000">&nbsp; </FONT><FONT SIZE=2 STYLE="font-size: 9pt"><FONT COLOR="#044e90"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">end</SPAN></SPAN></FONT></FONT></FONT></P>
+				<P ALIGN=LEFT STYLE="font-style: normal; font-weight: normal"><BR>
+				</P>
+			</TD>
+			<TD WIDTH=776>
+				<P id="classhierarchy" ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal">
+				<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>The
+				inheritance «&nbsp;hierarchy&nbsp;» would look like :</FONT></FONT></FONT></P>
 
-    <h2>Authors</h2>
-<p>Pierre Jouve (pierre.jouve@altrabio.com)<br/><br/>      </p>
-<h2>Contact</h2>
-<p>altrabio (pierre.jouve.altrabio@gmail.com)<br/>      </p>
+				<P  ALIGN=LEFT STYLE="font-style: normal; font-weight: normal"><IMG SRC="https://github.com/testaltrabio1/altrabioCVI/raw/master/description%20altrabio%20CVI_html_mf61ca4a.gif" NAME="images5" ALIGN=LEFT WIDTH=740 HEIGHT=606 BORDER=0><BR CLEAR=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+	</TABLE>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; background: transparent; line-height: 100%">
+	</P>
+</UL>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>This
+inheritance looks reasonable, but now we have to come up with
+relational database structure. We need to find a way to store each
+class’s own attributes (Audio’s own attributes, Mp3's own
+attributes, Video's own attributes... as well as their common
+(Media’s) attributes without duplication). </FONT></FONT></FONT>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>We
+will first review solutions at our disposal,and also shortly discuss
+their drawbacks. Then we will introduce a new solution which to our
+mind eliminates drawbacks and extends the features of existing
+solution.</FONT></FONT></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+<BR><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; line-height: 100%">
+<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=4 STYLE="font-size: 16pt"><B>2.
+Existing Solutions</B></FONT></FONT></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; line-height: 100%">
+<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=4><B>2.<FONT SIZE=3>1.</FONT>
+Database Management System based solution</B></FONT></FONT></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>Some
+relational database management  systems RDBMS (such as PostgreSQL)
+provide support for table inheritance (see <A HREF="http://www.postgresql.org/docs/8.1/static/ddl-inherit.html">here</A>),
+but it’s a specialized feature which ties you down to the given
+RDBMS.</FONT></FONT></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; line-height: 100%">
+<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=4><B>2.<FONT SIZE=3>2.</FONT>
+Single Table Inheritance based solution</B></FONT></FONT></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">ActiveRecord
+provides only one way to handle a is_a relationship which is <A HREF="http://en.wikipedia.org/wiki/Single_Table_Inheritance">Single
+Table Inheritance</A> (see also <A HREF="http://api.rubyonrails.org/classes/ActiveRecord/Base.html">here</A>).
+You’d have to create a table looking somewhat like the following.</SPAN></SPAN></FONT></FONT></FONT></P>
+<TABLE WIDTH=667 BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0>
+	<COL WIDTH=38>
+	<COL WIDTH=93>
+	<COL WIDTH=66>
+	<COL WIDTH=65>
+	<COL WIDTH=50>
+	<COL WIDTH=40>
+	<COL WIDTH=53>
+	<COL WIDTH=61>
+	<COL WIDTH=62>
+	<COL WIDTH=57>
+	<TR VALIGN=TOP>
+		<TD WIDTH=38>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">id</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=93>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">type</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=66>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">price</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=65>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">name</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">title</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=40>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">genre</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=53>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">author</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=61>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">language1</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">language2</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=57>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">summary</FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=38 SDVAL="1" SDNUM="1036;">
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">1</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=93>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">Audio</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=66 SDVAL="10" SDNUM="1036;">
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">10</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=65>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">n1</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">t1</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=40>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">g1</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=53>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=61>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=57>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=38 SDVAL="2" SDNUM="1036;">
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">2</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=93>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">Mp3</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=66 SDVAL="5" SDNUM="1036;">
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">5</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=65>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">n2</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">t2</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=40>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">g2</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=53>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=61>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=57>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=38 SDVAL="3" SDNUM="1036;">
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">3</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=93>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">Video</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=66 SDVAL="11" SDNUM="1036;">
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">11</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=65>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">n3</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">t3</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=40>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">g3</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=53>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=61>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=57>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=38 SDVAL="4" SDNUM="1036;">
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">4</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=93>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">Book</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=66 SDVAL="12" SDNUM="1036;">
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">12</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=65>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">n4</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">t4</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=40>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=53>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">a4</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=61>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=57>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=38 SDVAL="5" SDNUM="1036;">
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">5</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=93>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">Novel</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=66 SDVAL="13" SDNUM="1036;">
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">13</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=65>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">n5</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">t5</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=40>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=53>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">a5</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=61>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=57>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">s5</FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=38 SDVAL="6" SDNUM="1036;">
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">6</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=93>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">Dictionary</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=66 SDVAL="10" SDNUM="1036;">
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">10</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=65>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">n6</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">t6</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=40>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=53>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">a6</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=61>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">l16</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">l26</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=57>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=38 SDVAL="7" SDNUM="1036;">
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">7</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=93>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">PocketDictionary</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=66 SDVAL="7" SDNUM="1036;">
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">7</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=65>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">n7</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">t7</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=40>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=53>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">a7</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=61>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">l17</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">l27</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=57>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=38 SDVAL="8" SDNUM="1036;">
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">8</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=93>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">Unknown</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=66 SDVAL="5" SDNUM="1036;">
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">5</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=65>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">n8</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=40>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=53>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=61>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=57>
+			<P ALIGN=LEFT><FONT FACE="Optima"><FONT SIZE=1 STYLE="font-size: 8pt">NULL</FONT></FONT></P>
+		</TD>
+	</TR>
+</TABLE>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>The
+problem here is that all attributes are stored in the same table.
+It’s likely that soon the number of attributes will grow
+unmanageable, and most of them will always stay NULL since they’ll
+be specific to only one type (not really efficient storage). </FONT></FONT></FONT>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; line-height: 100%">
+<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=4><B>2.<FONT SIZE=3>3.</FONT>
+Polymorphic Has_one Association based solution</B></FONT></FONT></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>A
+has_one association allows us to split out medias, audios, mp3s,
+videos, books, dictionaries, pocket dictionaries, novels and unknowns
+into different tables. We won't deeply explain drawbacks of this
+solution but only point out that it creates a “has_a”
+relationship whereas we want a is_a relationship. </FONT></FONT></FONT>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; line-height: 100%">
+<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=4><B>2.<FONT SIZE=3>4.</FONT>
+Multiple Table Inheritance (Simulated) based solution</B></FONT></FONT></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>Has_one
+association problem is that it creates a “has_a” relationship,
+and we want a “is_a”. Since there isn’t much choice, several
+authors (see <A HREF="http://mediumexposure.com/multiple-table-inheritance-active-record/">Multiple
+Table Inheritance (MTI)</A>, or <A HREF="https://github.com/brunofrank/class-table-inheritance">Class
+Table Inheritance (CTI)</A>) decided to make it look like we have an
+“is_a” relationship. We won't discuss here implementation details
+and you should refer to the previously given links for more
+information. But, you should be aware that for these solutions all
+subclasses would inherit from ActiveRecord::Base and that these
+solutions consist in doing some clever things to fake some aspects of
+classes inheritance but not all (for instance, if you use this
+solution, calling <FONT FACE="Monaco, monospace">Book.superclass</FONT>
+would return <FONT FACE="Monaco, monospace">ActiveRecord::Base</FONT>
+and not <FONT FACE="Monaco, monospace">Media</FONT> as we may have
+desired)</FONT></FONT></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>Nevertheless,
+their authors have done a pretty good work, and solutions proposed
+would fit to a lot of inheritance cases and would provide users of
+their plugins with a functional solution to their problems. Yet, in
+some cases (that we enumerate below) this won't be enough.</FONT></FONT></FONT></P>
+<UL>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><SPAN STYLE="font-weight: normal"><FONT FACE="Optima-Regular, sans-serif"><FONT COLOR="#262626"><FONT SIZE=3><SPAN STYLE="font-style: normal">Case
+	1 : Imagine you have defined some instance methods in the superclass
+	(Media) which all subclasses need to be able to access (for instance
+	price_category which returns «&nbsp;A&nbsp;» if the price is lower
+	than 75, «&nbsp;B&nbsp;» if the price is betwen 75 and 100, «&nbsp;C&nbsp;»
+	if the price is greater than 100). Since the CTI gem doesn't
+	actually use Ruby Inheritance you won't be able to access to the
+	superclass's methods (price_category for instance). </SPAN></FONT></FONT></FONT></SPAN>
+	</P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT SIZE=3><SPAN STYLE="font-style: normal"><FONT COLOR="#262626"><SPAN STYLE="font-weight: normal"><FONT FACE="Optima-Regular, sans-serif">Case
+	2 : TODO A VERIFIER Imagine you have a multi-level inheritance
+	hierarchy (as it is the case with our multimedia Library). You can
+	not use CTI plugins to directly model this situation. In fact, MTI
+	plugin has been created to modelize Multiple Inheritance Table only
+	for a one level inheritance hierarchy. This mean that if we want to
+	use this plugin (without any modification) we would need to alter
+	our inheritance hierarchy (into a flat / one level hierarchy) as
+	done below. This  may be possible in some cases without problem, but
+	for most cases this would imply some serious drawbacks.  </FONT></SPAN></FONT></SPAN></FONT>
+	</P>
+</UL>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; line-height: 100%">
+<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><B>Flat
+Class Hierarchy / One level Class Hierarchy :</B></FONT></FONT></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+<IMG SRC="https://github.com/testaltrabio1/altrabioCVI/raw/master/description%20altrabio%20CVI_html_m606338ff.gif" NAME="images3" ALIGN=LEFT WIDTH=1036 HEIGHT=290 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+<BR><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT SIZE=4 STYLE="font-size: 16pt"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><B>3.
+A New Solution : </B></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><I><SPAN STYLE="font-weight: normal">Embedding
+Ruby Class Inheritance &amp; Multiple Table Inheritance</SPAN></I></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><B>
+</B></SPAN></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">through
+use of Ruby Class Inheritance &amp; Databases Views   </SPAN></SPAN></FONT></FONT></FONT>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>As
+for now, we have seen that except the Database Management System
+based solutions which may be based upon a special feature of
+PostgreSQL RDBMS (and which intrinsically rely on the use of
+PostgreSQL) there is no completely satisfying solution for solving
+our class inheritance and multiple table inheritance problem.  We
+have recently decided to create a plugin that would allow solving
+such a problem. Our solution named <B>CITIEsForRails</B> was designed
+after a close look at the existing solutions and we want to thank
+here their authors for letting their code at community's disposal. We
+won't get here into a deep technical explanation of how our solution
+works but just give some very low level insights (maybe in near
+future we'll provide some more details ; yet, interested reader
+should refer to our commentated code, which can be grabbed <a
+href="https://github.com/testaltrabio1/test-application-for-AltrabioCVI">here</a>).  Thereafter, we first introduce features offered by
+our solution, give some brief informations related to the basic ideas
+that drove us for implementing this solution, and finally explain how
+to use it. Obviously, the explanations concerning the implementation
+of this solution may be not clear enough, but you could still skip
+them and still use our gem efficiently. Maybe, the best idea to
+understand completely the job done would be to investigate the
+commentated code.   </FONT></FONT></FONT>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; line-height: 100%">
+<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=4><B>3.<FONT SIZE=3>1.</FONT>
+A Full Featured Solution</B></FONT></FONT></FONT></P>
+<UL>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><B>Not
+	RDBMS dependent : </B></SPAN></FONT></FONT></FONT>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">this
+	solution can be used with probably every RDBMS (actually, we only
+	tested with SQLite, MySQL and PostgreSQL, but it should work with
+	other RDBMS with very minor changes). This feature is obviously not
+	included in RDBMS based solutions.</SPAN></SPAN></FONT></FONT></FONT></P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><B>Real
+	Ruby Class Inheritance &amp; Real is_a relationships : </B></SPAN></FONT></FONT></FONT>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">This
+	solution is firstly based on Ruby's class inheritance. For our
+	example, the inheritance hierachy is the one that a programmer would
+	expect (<a
+href="http://testaltrabio1.github.com/altrabioCVI/index.html#classhierarchy">see it here</a>).  This means that if you have defined some instance
+	methods/variables or class methods/variables in a superclass you can
+	have a natural access to it. This also means that a real "is_a"
+	relationship is used and that multi level inheritance hierarchy can
+	be modeled. This feature is not included in any other solution.</SPAN></SPAN></FONT></FONT></FONT></P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><B><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal">Efficient
+	Storing : </SPAN></FONT></FONT></FONT></B>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">To
+	efficiently store attributes of modeled classes, the database schema
+	used respects the class inheritance. The database schema is such
+	that no information is stored twice. To do so we create a table for
+	each node of the class hierarchy such that the node has at least one specific
+	attribute (specific attributes of a class are attributes that are not included into its superclass). 
+	For our example that means that we have a schema with the following
+	tables : </SPAN></SPAN></FONT></FONT></FONT>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">-Table1
+	(we call it 'medias' through the rest of this post) which is
+	associated to the Media class node for storing 'price' and 'name'
+	attributes (for Media class and all its derivated classes : Audio,
+	Mp3, Video, Book, Novel, Dictionary, Pocket Dictionary, Unknown) </SPAN></SPAN></FONT></FONT></FONT>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal">-Table2
+	 (we call it 'audios' through the rest of this post) which is
+	associated to the Audio class node for storing 'title' and 'genre'
+	attributes (for Audio class and all its derivated class Mp3)</SPAN></FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal">-Table3
+	 (we call it 'videos' through the rest of this post) which is
+	associated to the Video class node for storing 'title' and 'genre'
+	attributes (for Video class)</SPAN></FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal">-Table4
+	 (we call it 'tablebooks' through the rest of this post) which is
+	associated to the Book class node for storing 'author' and 'title'
+	attributes (for Book class and all its derivated classes : Novel,
+	Dictionary, Pocket Dictionary, Unknown) </SPAN></FONT></FONT></FONT>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal">-Table5
+	 (we call it 'novels' through the rest of this post) which is
+	associated to the Novel class node for storing 'summary' attribute
+	(for Novel class) </SPAN></FONT></FONT></FONT>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal">-Table6
+	 (we call it 'dictionaries' through the rest of this post) which is
+	associated to the Dictionary class node for storing 'language1' and
+	'language2' attributes (for Dictionary class and all its derivated
+	class : Pocket Dictionary)</SPAN></FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Note
+	that no Table is associated to Mp3, PocketDictionary, Unknown nodes
+	since they don't have any specific attribute.  With such a schema we
+	are able to store efficiently the attributes of each class
+	instances. This feature is not included in Single Table Based
+	solutions.</SPAN></SPAN></FONT></FONT></FONT></P>
+	<P id="databaseschema" ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><B><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal">Database
+	Schema :</SPAN></FONT></FONT></FONT></B></P>
+	<P  ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><IMG SRC="https://github.com/testaltrabio1/altrabioCVI/raw/master/description%20altrabio%20CVI_html_mac2489d.gif" NAME="images6" ALIGN=LEFT WIDTH=740 HEIGHT=339 BORDER=0><BR CLEAR=LEFT><FONT COLOR="#262626">
+	</FONT>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"></P>
+</UL>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; line-height: 100%">
+<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=4><B>3.<FONT SIZE=3>2.</FONT>
+Solution Philosophy at a glance</B></FONT></FONT></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">The
+philosophy used to implement this solution is the following, for each
+node of the class hierarchy (<a
+href="http://testaltrabio1.github.com/altrabioCVI/index.html#classhierarchy">see it here</a>) (does not depend on the
+fact that it has or not any specific attribute) we would like to use
+ActiveRecord facilities to manipulate it (this means using
+ActiveRecord facilities to save an object, update an object, load an
+object, read an object's attributes, destroy an object...). Using
+classically ActiveRecords would imply to use a specific table for
+each class, yet this would not respect the constraints required
+related to the storage. (this would not fit with our database schema
+constraints defined before, <a
+href="http://testaltrabio1.github.com/altrabioCVI/index.html#databaseschema">see it here</a>). </SPAN></SPAN></FONT></FONT></FONT>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">So
+what we propose here is just to have a mechanism that fake the
+existence of these tables while not requiring them. Our solution is
+actually based on a database schema such as the one needed. </SPAN></SPAN></FONT></FONT></FONT>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>The
+idea is basically to use the database schema proposed and to
+associate one/several defined tables for each class node of the
+hierarchy (this tables will be used for saving/storing/updating
+informations for objects) and to associate to each class node one
+virtual table (database views) or a table that will be accessed for
+loading/reading informations. Then the idea is to override 
+some ActiveRecord methods in order to propose to the user a classical
+use of ActiveRecord functionalities. The overriding will
+in fact consists in switching from the virtual table (the view) to
+the real tables whenever it is needed. You need the virtual table for
+loading/reading informations and the real tables for saving/updating
+informations. This is not clear ? Hopefully the use of the gem does
+not need any good understanding of how it works, and furthermore
+won't change your habits as far as the use of ActiveRecord
+functionalities are concerned. Yet I just give know some simple drawings that try to illustrate
+what happen behind the curtains when using our gem :</FONT></FONT></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; line-height: 100%">
+<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>
 
 
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="http://github.com/altrabio/CITIEsForRAILS/zipball/master">zip</a> or
-      <a href="http://github.com/altrabio/CITIEsForRAILS/tarball/master">tar</a> formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/altrabio/CITIEsForRAILS</pre>
-    </p>
+<B>  <a
+href="http://testaltrabio1.github.com/altrabioCVI/index.html#classhierarchy">
+See class hierarchy here </a>   </B>
 
-    <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/altrabio/CITIEsForRAILS">altrabio/CITIEsForRAILS</a>
-    </div>
 
-  </div>
+</FONT></FONT></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; line-height: 100%">
+<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>
 
-  
-</body>
+
+<B>  <a
+href="http://testaltrabio1.github.com/altrabioCVI/index.html#databaseschema">
+See database schema here </a>   </B>
+
+
+</FONT></FONT></FONT></P>
+<P id="databaseview" ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; line-height: 100%">
+<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><B>Database
+Views </B></FONT></FONT></FONT>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; line-height: 100%">
+<IMG SRC="https://github.com/testaltrabio1/altrabioCVI/raw/master/description%20altrabio%20CVI_html_444ebff4.gif" NAME="images2" ALIGN=LEFT WIDTH=740 HEIGHT=363 BORDER=0><BR CLEAR=LEFT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><B>Class
+Hierarchy &amp; Associated Tables / Views</B></FONT></FONT></FONT></P>
+
+
+
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+<IMG SRC="https://github.com/testaltrabio1/altrabioCVI/raw/master/description%20altrabio%20CVI_html_2c774f35.gif" NAME="images1" ALIGN=LEFT WIDTH=1480 HEIGHT=1183 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+
+
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+<BR><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><B>3.</B><FONT SIZE=2><B>3</B></FONT><B>
+CITIEsForRails User's Guide</B></FONT></FONT></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>We
+give here the  details to use our solution. Note that a functional
+web app implementing the multimedia library example is available 
+<a
+href="https://github.com/testaltrabio1/test-application-for-AltrabioCVI">here</a>. It may be worth having a look at it since each
+specific code entry necessitated by the use of our plugin has been
+associated with a “#needed for CITIEsForRails” comment. Moreover
+some extra Comments &amp; BookComments objects have been added to
+exhibit that Callbacks functionalities are also available (in fact
+every ActiveRecord facility should be available). Installing this app
+and getting into code may be a good way to understand how to use our
+gem.</FONT></FONT></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>You
+should follow the next steps to use <B>CITIEsForRails :</B> </FONT></FONT></FONT>
+</P>
+<OL>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Model
+	your class inheritance hierarchy (<a
+href="http://testaltrabio1.github.com/altrabioCVI/index.html#classhierarchy">see for instance our example</a>)</SPAN></SPAN></FONT></FONT></FONT></P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Once
+	your class inheritance hierarchy is modeled : determine what we will
+	call the role of each class. There are 3 kind of roles : </SPAN></SPAN></FONT></FONT></FONT>
+	</P>
+</OL>
+<UL>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626">”<FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">mother
+	class” : the “mother class” is the class which will inherit
+	from ActiveRecord::Base and from which all of your modeled classes
+	derive. In our example </SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Media</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+	is the “mother class”.</SPAN></SPAN></FONT></FONT></FONT></P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626">”<FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">class
+	with specific attribute(s)” : this stands for classes that do have
+	specific attributes (attributes that are not included in the classes
+	they derive from). In our example </SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Audio</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">,
+	</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Video</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">,
+	</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Book</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">,
+	</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Novel</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">,
+	</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Dictionary</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+	are ”classes with specific attribute(s)”.</SPAN></SPAN></FONT></FONT></FONT></P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626">”<FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">class
+	without specific attribute(s)” : this stands for classes that do
+	NOT have specific attributes. In our example </SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Mp3</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">,
+	</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">PocketDictionary</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">,
+	</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Unknown</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+	are ”classes without specific attribute(s)”.</SPAN></SPAN></FONT></FONT></FONT></P>
+</UL>
+<OL START=3>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Once
+	roles are determined : determine the database schema (it is better
+	if this schema is such that it avoids duplication (<a
+href="http://testaltrabio1.github.com/altrabioCVI/index.html#databaseschema">see for instance our example</a>). Note that the table associated to
+	the mother class requires one extra columns that we will call
+	inheritance_column (our solution uses notably Rails Single Table
+	Inheritance facility). (To sum up : the “mother class”
+	necessitates a table with columns : id, inheritance_column and a
+	column per attribute ; each ”class with specific attribute(s)”
+	necessitates a table with columns : id and a column per specific
+	attribute).  </SPAN></SPAN></FONT></FONT></FONT>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><I><SPAN STYLE="font-weight: normal">For
+	our example, this mean that we need 6 tables :</SPAN></I></FONT></FONT></FONT></P>
+</OL>
+<UL>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>Table
+	medias with columns id, inheritance_column, price and name</FONT></FONT></FONT></P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>Table
+	audio with columns id, title and genre </FONT></FONT></FONT>
+	</P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>Table
+	videos with columns id,  title and genre</FONT></FONT></FONT></P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>Table
+	tablebooks with columns id,  title and author</FONT></FONT></FONT></P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>Table
+	novels with columns id and summary</FONT></FONT></FONT></P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>Table
+	dictionaries with columns id, language1, and language2</FONT></FONT></FONT></P>
+</UL>
+<OL START=4>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Determine
+	views that are needed (one per ”class with specific attribute(s)”)
+	(<a
+href="http://testaltrabio1.github.com/altrabioCVI/index.html#databaseview">see for instance our example</a>) . Such views may be
+	created thanks to the provided function CreateTheViewForCVI(class)
+	or dropped with the provided function DropTheViewForCVI(class) . </SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><I><SPAN STYLE="font-weight: normal">For
+	our example, this mean that we need 5 views :</SPAN></I></FONT></FONT></FONT></P>
+
+</OL>
+<UL>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>View
+	view_audios (which may be generated by CreateTheViewForCVI(Audio))</FONT></FONT></FONT></P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">View
+	view_videos (which may be generated by CreateTheViewForCVI(Video))</SPAN></SPAN></FONT></FONT></FONT></P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">View
+	view_tablebooks (which may be generated by
+	CreateTheViewForCVI(Book))</SPAN></SPAN></FONT></FONT></FONT></P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">View
+	view_novels (which may be generated by CreateTheViewForCVI(Novel))</SPAN></SPAN></FONT></FONT></FONT></P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT SIZE=3><FONT FACE="Optima-Regular, sans-serif"><FONT COLOR="#262626"><SPAN STYLE="font-weight: normal"><SPAN STYLE="font-style: normal">View
+	view_dictionaries </SPAN></SPAN></FONT></FONT></FONT><FONT SIZE=3><FONT FACE="Optima-Regular, sans-serif"><FONT COLOR="#262626"><SPAN STYLE="font-weight: normal"><SPAN STYLE="font-style: normal"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">(which
+	may be G</SPAN></SPAN></FONT></FONT></FONT></SPAN></SPAN></FONT></FONT></FONT><SPAN STYLE="font-weight: normal"><SPAN STYLE="font-style: normal"><FONT SIZE=3><FONT FACE="Optima-Regular, sans-serif"><FONT COLOR="#262626">enerated
+	by CreateTheViewForCVI(Dictionary))</FONT></FONT></FONT></SPAN></SPAN></P>
+</UL>
+<OL START=5>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>Write
+	the migrations needed for establishing the database schema (tables &amp;
+	views)</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><I>For
+	our example this would mean generating the following migrations :</I></FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">class
+	CreateMedias &lt; ActiveRecord::Migration</FONT></FONT></FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">def
+	self.up</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">create_table
+	:medias do |t|</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">      <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">t.string
+	:inheritance_column_name </FONT></FONT></FONT>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">      <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">t.string
+	:name</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">      <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">t.integer
+	:price</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">def
+	self.down</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">drop_table
+	:medias</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">#--------------------------------------</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">class
+	CreateBooks &lt; ActiveRecord::Migration</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">def
+	self.up</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">create_table
+	:tablebooks do |t|</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">      <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">t.string
+	:title</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">      <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">t.string
+	:author</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">self.CreateTheViewForCVI(Book)</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">def
+	self.down</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">self.DropTheViewForCVI(Book)</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">drop_table
+	:books</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">#--------------------------------------</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">class
+	CreateDictionaries &lt; ActiveRecord::Migration</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">def
+	self.up</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">create_table
+	:dictionaries do |t|</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">      <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">t.string
+	:lf</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">      <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">t.string
+	:lt</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">CreateTheViewForCVI(Dictionary)</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">def
+	self.down</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">DropTheViewForCVI(Dictionary)</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">drop_table
+	:dictionaries</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">#--------------------------------------</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">class
+	CreateNovels &lt; ActiveRecord::Migration</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">def
+	self.up</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">create_table
+	:novels do |t|</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">      <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">t.string
+	:summary</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">CreateTheViewForCVI(Novel)</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"> <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">def
+	self.down</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">DropTheViewForCVI(Novel)</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">drop_table
+	:novels</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">#--------------------------------------</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">class
+	CreateVideos &lt; ActiveRecord::Migration</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">def
+	self.up</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">create_table
+	:videos do |t|</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">      <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">t.string
+	:title</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">      <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">t.string
+	:genre</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">CreateTheViewForCVI(Video)</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">def
+	self.down</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">DropTheViewForCVI(Video)</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">drop_table
+	:videos</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">#--------------------------------------</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">class
+	CreateAudios &lt; ActiveRecord::Migration</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">def
+	self.up</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">create_table
+	:audios do |t|</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">      <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">t.string
+	:title</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">      <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">t.string
+	:genre</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">     <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">CreateTheViewForCVI(Audio)</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">def
+	self.down</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">DropTheViewForCVI(Audio)</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">    <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">drop_table
+	:audios</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">#--------------------------------------</FONT></FONT></FONT></P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Now
+	you have to indicate for each classes its role. This is done into
+	your models definitions by adding the special phrase : “acts_as_cvi”
+	only for the mother_class and for each ”class with specific
+	attribute(s)”. This special phrase may be accompanied by an
+	optional option hash :
+	{:table_name=&gt;'name_of_the_table_associated_with_the_class' ,
+	:db_type_field=&gt;'name_of_the_inheritance_column'}. Note that
+	default values for these options are respectively the pluralized
+	name of the class for :table_name and 'type' for :db_type_field.</SPAN></SPAN></FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><I><SPAN STYLE="font-weight: normal">For
+	our example this would imply the following :</SPAN></I></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
+	 </SPAN></SPAN></FONT></FONT></FONT>
+	</P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">class
+	Media &lt; ActiveRecord::Base</SPAN></SPAN></FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626">
+	 <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">acts_as_cvi
+		#default values are used there since the table associated to Media
+	class is medias and the inheritance column is named type</SPAN></SPAN></FONT></FONT></FONT></P>
+	<OL>
+		<OL>
+			<OL>
+				<OL>
+					<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">#in
+					the following models definitions we won't mention that the
+					default value is used for :db_type_field </SPAN></SPAN></FONT></FONT></FONT>
+					</P>
+					<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">#and
+					will only mention non default value for :table name when needed</SPAN></SPAN></FONT></FONT></FONT></P>
+				</OL>
+			</OL>
+		</OL>
+	</OL>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"> <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">#--------------------------------------</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><FONT COLOR="#262626">class
+	Audio &lt; Media</FONT></FONT></FONT></SPAN></SPAN></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">acts_as_cvi</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">#--------------------------------------</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">class
+	Mp3 &lt; Audio</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><SPAN STYLE="font-style: normal"><FONT FACE="Monaco, monospace"><FONT COLOR="#262626"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="font-weight: normal">#--------------------------------------</SPAN></FONT></FONT></FONT></SPAN></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal"><FONT SIZE=1 STYLE="font-size: 8pt">class
+	Book &lt; Media</FONT></SPAN></SPAN></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626">
+	 <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">acts_as_cvi
+	:table_name=&gt;'tablebooks'   #here we need to specify
+	:table_name=&gt;'books' since the table associated to Book class is
+	tablebooks and not book</SPAN></SPAN></FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">#--------------------------------------</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">class
+	Dictionary &lt; Book</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"> <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">acts_as_cvi</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">#--------------------------------------</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT SIZE=1 STYLE="font-size: 8pt"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-weight: normal"><SPAN STYLE="font-style: normal">class
+	Novel &lt; Book</SPAN></SPAN></FONT></FONT></FONT></P>
+	<OL>
+		<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+		<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">acts_as_cvi</FONT></FONT></FONT></P>
+	</OL>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">#--------------------------------------</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><SPAN STYLE="font-weight: normal"><FONT COLOR="#262626"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="font-style: normal"><FONT FACE="Monaco, monospace">class
+	PocketDictionary &lt; Dictionary</FONT></SPAN></FONT></FONT></SPAN></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">#--------------------------------------</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><FONT COLOR="#262626"><SPAN STYLE="font-weight: normal"><SPAN STYLE="font-style: normal">class
+	Unknown &lt; Media</SPAN></SPAN></FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">#--------------------------------------</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">class
+	Video &lt; Media</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">acts_as_cvi</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"> <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">#--------------------------------------</FONT></FONT></FONT></P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>And
+	that's all...</FONT></FONT></FONT></P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+	<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>Well,
+	not really, you will also have to install our gem thanks to the
+	following command</FONT></FONT></FONT></P>
+	<OL>
+		<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+		<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=3>gem
+		install CITIEsForRails</FONT></FONT></FONT></P>
+	</OL>
+</OL>
+
+
+
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; line-height: 100%">
+<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>
+
+
+<B> We hope these explanations will be enough for you to use our gem...   </B>
+
+
+</FONT></FONT></FONT></P>
+
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+<BR><BR>
+</P>
+<OL START=8>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"></P>
+	<P ALIGN=CENTER STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT SIZE=6 STYLE="font-size: 22pt"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Some
+	more documentation to come....</SPAN></SPAN></FONT></FONT></FONT></P>
+	<P ALIGN=CENTER STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#000000">&nbsp;&nbsp;</FONT></P>
+	<P ALIGN=CENTER STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#000000">&nbsp;&nbsp;</FONT></P>
+	<P ALIGN=CENTER STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#000000">&nbsp;&nbsp;</FONT><FONT COLOR="#000000">&nbsp;&nbsp;</FONT></P>
+	<P ALIGN=CENTER STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT SIZE=7 STYLE="font-size: 32pt"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">-----------------------------------------------------------------</SPAN></SPAN></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Monaco, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">&nbsp;&nbsp;</SPAN></SPAN></FONT></FONT></FONT></FONT></P>
+	<P ALIGN=CENTER STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT SIZE=7 STYLE="font-size: 32pt"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">We
+	encourage you to :</SPAN></SPAN></FONT></FONT></FONT></P>
+</OL>
+<P ALIGN=CENTER STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT SIZE=7 STYLE="font-size: 32pt"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">try
+</SPAN></SPAN></FONT></FONT></FONT>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT SIZE=7 STYLE="font-size: 32pt"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">test</SPAN></SPAN></FONT></FONT></FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT SIZE=7 STYLE="font-size: 32pt"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">use</SPAN></SPAN></FONT></FONT></FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT SIZE=7 STYLE="font-size: 32pt"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">enhance</SPAN></SPAN></FONT></FONT></FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT SIZE=7 STYLE="font-size: 32pt"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">document
+this gem...</SPAN></SPAN></FONT></FONT></FONT></P>
+<OL START=8>
+	<P ALIGN=CENTER STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;</FONT><FONT COLOR="#000000">&nbsp;&nbsp;</FONT></P>
+	<P ALIGN=CENTER STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#000000">&nbsp;&nbsp;</FONT></P>
+	<P ALIGN=CENTER STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT SIZE=7 STYLE="font-size: 32pt"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Give
+	us some feed back at : </SPAN></SPAN></FONT></FONT></FONT>
+	</P>
+	<P ALIGN=CENTER STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT SIZE=7 STYLE="font-size: 32pt"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">citiesforrails”the_at_sign”altrabio.com</SPAN></SPAN></FONT></FONT></FONT></P>
+	<P ALIGN=CENTER STYLE="margin-bottom: 0.74cm; line-height: 100%"></P>
+	<P ALIGN=CENTER STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;</FONT><FONT COLOR="#000000">&nbsp;&nbsp;</FONT></P>
+	<P ALIGN=CENTER STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=7 STYLE="font-size: 32pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">-----------------------------------------------------------------</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Monaco, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">&nbsp;&nbsp;</SPAN></SPAN></FONT></FONT></FONT></P>
+</OL>
+<P ALIGN=CENTER STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+<BR><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+<BR><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+<BR><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
+<BR><BR>
+</P>
+</BODY>
 </html>
