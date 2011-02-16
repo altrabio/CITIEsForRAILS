@@ -20,7 +20,9 @@ module Cities
         
         
         db_type_field = (options[:db_type_field] || :type).to_s         #:db_type_field = option for setting the inheritance columns, default value = 'type'
+        puts "tablename option->#{:table_name}"
         table_name = (options[:table_name] || self.name.tableize.gsub(/\//,'_')).to_s  #:table_name = option for setting the name of the current class table_name, default value = 'tableized(current class name)'
+        puts "tablename now->#{table_name}"
 
         set_inheritance_column "#{db_type_field}"
 
@@ -33,6 +35,7 @@ module Cities
           puts "acts_as_cities -> NON mother class"
     
           set_table_name "view_#{table_name}"
+          puts "tablename->#{self.table_name}"
           aaa=create_class_part_of self# these 2 lines are there for the creation of class PartOf (which is a class of the current class)
           self.const_set("PartOf",aaa) # it will stand for the write table of the current class            
           
@@ -82,7 +85,10 @@ module Cities
           if RAILS_ENV == 'development' 
             puts "acts_as_cities -> MOTHER class"        
           end
-          set_table_name="#{table_name}"     
+          puts("now table_name->#{table_name}")
+          set_table_name "#{table_name}"     
+          puts "tablename->#{self.table_name}"
+          #table_name = (options[:table_name] || self.name.tableize.gsub(/\//,'_')).to_s  #:table_name = option for setting the name of the current class table_name, default value = 'tableized(current class name)'
           
           def self.mother_class #returns the mother class (the highest inherited class before ActiveRecord) 
            if(self.superclass!=ActiveRecord::Base)  
