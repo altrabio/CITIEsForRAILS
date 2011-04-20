@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{CITIEsForRAILS}
-  s.version = "0.0.4"
+  s.version = "0.0.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Laurent Buffat & Pierre-Emmanuel JOUVE"]
   s.date = %q{2011-02-16}
-  s.description = %q{CITIEsForRAILS (Class Inheritance & Table Iheritance Embeddings For RAILS) is a solution that extends Single/Multiple/Class Table Inheritance. This solution is based on classical Ruby class inheritance, single table inheritance as well as DB views.
+  s.description = %q{CITIEsForRAILS (Class Inheritance & Table Inheritance Embeddings For RAILS) is a solution that extends Single/Multiple/Class Table Inheritance. This solution is based on classical Ruby class inheritance, single table inheritance as well as DB views.
 
 
   For Full Information GO TO : http://altrabio.github.com/CITIEsForRAILS/}
@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{citiesforrails}
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{CITIEsForRAILS (Class Inheritance & Table Iheritance Embeddings For RAILS) is a solution that extends Single/Multiple/Class Table Inheritance. This solution is based on classical Ruby class inheritance, single table inheritance as well as DB views.   For Full Information GO TO : http://altrabio.github.com/CITIEsForRAILS/}
+  s.summary = %q{CITIEsForRAILS (Class Inheritance & Table Inheritance Embeddings For RAILS) is a solution that extends Single/Multiple/Class Table Inheritance. This solution is based on classical Ruby class inheritance, single table inheritance as well as DB views.   For Full Information GO TO : http://altrabio.github.com/CITIEsForRAILS/}
 
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION

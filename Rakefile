@@ -2,8 +2,8 @@ require 'rubygems'
 require 'rake'
 require 'echoe'
 
-Echoe.new('CITIEsForRAILS', '0.0.4') do |p|
-  p.description    = "CITIEsForRAILS (Class Inheritance & Table Iheritance Embeddings For RAILS) is a solution that extends Single/Multiple/Class Table Inheritance. This solution is based on classical Ruby class inheritance, single table inheritance as well as DB views.
+Echoe.new('CITIEsForRAILS', '0.0.5') do |p|
+  p.description    = "CITIEsForRAILS (Class Inheritance & Table Inheritance Embeddings For RAILS) is a solution that extends Single/Multiple/Class Table Inheritance. This solution is based on classical Ruby class inheritance, single table inheritance as well as DB views.
 
 
   For Full Information GO TO : http://altrabio.github.com/CITIEsForRAILS/"

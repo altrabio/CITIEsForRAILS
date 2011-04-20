@@ -164,7 +164,7 @@ module Cities
         end
     
         if(herited_saved==false) 
-          alert('please contact us') # que faire si herited_saved vaut false ? A VOIR
+          puts('please contact us') # que faire si herited_saved vaut false ? A VOIR
         end
 
         part_of_saved=true
@@ -178,7 +178,7 @@ module Cities
 
           part_of_saved = part_of.save
           if(part_of_saved==false) 
-            alert('please contact us...') # que faire si herited_saved vaut false ? A VOIR
+            puts('please contact us...') # que faire si herited_saved vaut false ? A VOIR
           end
          end
 
@@ -215,7 +215,7 @@ module Cities
         end
 
         if(herited_saved==false) 
-          alert('please contact altrabio use the following mail : altrabio...altrabio.com') # que faire si herited_saved vaut false ? A VOIR
+          puts('please contact altrabio use the following mail : altrabio...altrabio.com') # que faire si herited_saved vaut false ? A VOIR
         end
 
         part_of_saved=true
@@ -229,7 +229,7 @@ module Cities
 
           part_of_saved = part_of.save
           if(part_of_saved==false) 
-            alert('please contact altrabio use the following mail : altrabio...altrabio.com') # que faire si herited_saved vaut false ? A VOIR
+            puts('please contact altrabio use the following mail : altrabio...altrabio.com') # que faire si herited_saved vaut false ? A VOIR
           end
          end
 
