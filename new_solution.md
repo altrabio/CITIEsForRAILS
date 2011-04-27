@@ -31,7 +31,7 @@ To efficiently store attributes of modeled classes, the database schema used res
 Note that no Table is associated to Mp3, PocketDictionary, Unknown nodes since they don't have any specific attribute. With such a schema we are able to store efficiently the attributes of each class instances. This feature is not included in Single Table Based solutions.
 
 **Database Schema**
-![Database Schema](/images/database_schema.gif "Database Schema")
+![Database Schema](images/database_schema.gif "Database Schema")
 
 
 Solution Philosophy
@@ -43,8 +43,8 @@ So what we propose here is just to have a mechanism that fake the existence of t
 
 The idea is basically to use the database schema proposed and to associate one/several defined tables for each class node of the hierarchy (this tables will be used for saving/storing/updating informations for objects) and to associate to each class node one virtual table (database views) or a table that will be accessed for loading/reading informations. Then the idea is to override some ActiveRecord methods in order to propose to the user a classical use of ActiveRecord functionalities. The overriding will in fact consists in switching from the virtual table (the view) to the real tables whenever it is needed. You need the virtual table for loading/reading informations and the real tables for saving/updating informations. This is not clear ? Hopefully the use of the gem does not need any good understanding of how it works, and furthermore won't change your habits as far as the use of ActiveRecord functionalities are concerned. Yet I just give know some simple drawings that try to illustrate what happen behind the curtains when using our gem:
 **Database Views**
-![Database Views](/images/database_views.gif "Database Views")
+![Database Views](images/database_views.gif "Database Views")
 
 For a detailed picture what the class heirarchy & associated tables/views look like, see below (click to enlarge).
 
-[![Class Hierarchy and Views](/images/class_hierarchy_and_views.gif "Class Hierarchy and Views")](/images/class_hierarchy_and_views.gif)
+[![Class Hierarchy and Views](images/class_hierarchy_and_views.gif "Class Hierarchy and Views")](images/class_hierarchy_and_views.gif)

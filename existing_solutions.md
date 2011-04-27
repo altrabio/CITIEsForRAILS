@@ -67,7 +67,7 @@ Nevertheless, their authors have done a pretty good work, and solutions proposed
 - Case 2 : TODO A VERIFIER Imagine you have a multi-level inheritance hierarchy (as it is the case with our multimedia Library). You can not use CTI plugins to directly model this situation. In fact, MTI plugin has been created to modelize Multiple Inheritance Table only for a one level inheritance hierarchy. This mean that if we want to use this plugin (without any modification) we would need to alter our inheritance hierarchy (into a flat / one level hierarchy) as done below. This may be possible in some cases without problem, but for most cases this would imply some serious drawbacks.
 
 **Flat Class Hierarchy / One level Class Hierarchy :**
-![Flat Class Hierarchy](/images/flat_class_hierarchy.gif "Flat Class Hierarchy")
+![Flat Class Hierarchy](images/flat_class_hierarchy.gif "Flat Class Hierarchy")
 
 
 
