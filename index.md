@@ -12,7 +12,7 @@ Introduction to CITIER
 
 **Ruby Class Inheritance & Multiple Table Inheritance Embeddings : A full featured solution based on Ruby Class Inheritance & Views**
 
-When trying to model a real world problem that needs some information storage into databases, programmers often face the issue which consists in mapping objects to relational databases (see for instance here). After a short (and not exhaustive) review of Rails existing solutions we propose a new solution which has been bundled into a gem called : **CITIER** **C**lass **I**nheritance & **T**able **I**nheritance **E**mbeddings **For Rails**
+When trying to model a real world problem that needs some information storage into databases, programmers often face the issue which consists in mapping objects to relational databases (see for instance here). After a short (and not exhaustive) review of Rails existing solutions we propose a new solution which has been bundled into a gem called : **CITIER** **C**lass **I**nheritance & **T**able **I**nheritance **E**mbeddings for **R**ails
 
 This project is inspired by many articles and previous attempts some of which include:
 
