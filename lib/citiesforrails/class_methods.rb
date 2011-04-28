@@ -2,42 +2,43 @@ module ClassMethods
   # any method placed here will apply to classes
 
 
-  def acts_as_cities(options = {}) #options hash see below
+  def acts_as_cities(options = {})
 
+    # Option for setting the inheritance columns, default value = 'type'
+    db_type_field = (options[:db_type_field] || :type).to_s
 
-    db_type_field = (options[:db_type_field] || :type).to_s         #:db_type_field = option for setting the inheritance columns, default value = 'type'
-    puts "tablename option->#{:table_name}"
-    table_name = (options[:table_name] || self.name.tableize.gsub(/\//,'_')).to_s  #:table_name = option for setting the name of the current class table_name, default value = 'tableized(current class name)'
-    puts "tablename now->#{table_name}"
+    #:table_name = option for setting the name of the current class table_name, default value = 'tableized(current class name)'
+    table_name = (options[:table_name] || self.name.tableize.gsub(/\//,'_')).to_s
 
     set_inheritance_column "#{db_type_field}"
 
     if(self.superclass!=ActiveRecord::Base)
-      #------------------------------------------------------------------------------------------------------------------------ 
-      #
-      #             methods that will be used for the NON mother class
-      #
-      #------------------------------------------------------------------------------------------------------------------------
-      puts "acts_as_cities -> NON mother class"
+      # Non mother-class
 
+      cities_debug("Non Mother Class")
+      cities_debug("table_name -> #{table_name}")
+      
+      # Set up the table which contains ALL attributes we want for this class
       set_table_name "view_#{table_name}"
-      puts "tablename->#{self.table_name}"
 
-      self.const_set("Clone", create_class_clone(self)) # it will stand for the write table of the current class            
+      cities_debug("tablename (view) -> #{self.table_name}")
 
+      # The the Clone. References the write-able table for the class because
+      # save operations etc can't take place on the views
+      self.const_set("Clone", create_class_clone(self))
+
+      # Add the functions required for children only
       send :include, ChildInstanceMethods
     else
-      #------------------------------------------------------------------------------------------------------------------------ 
-      #
-      #             methods that will be used for the mother class
-      #
-      #------------------------------------------------------------------------------------------------------------------------
+      # Mother class
+
       after_save :updatetype
 
-      cities_debug("acts_as_cities -> MOTHER class")
-      puts("now table_name->#{table_name}")
-      set_table_name "#{table_name}"     
-      puts "tablename->#{self.table_name}"
+      cities_debug("Mother Class")
+      
+      set_table_name "#{table_name}"
+      
+      cities_debug("table_name -> #{self.table_name}")
 
       def self.mother_class #returns the mother class (the highest inherited class before ActiveRecord) 
         if(self.superclass!=ActiveRecord::Base)  
@@ -45,28 +46,31 @@ module ClassMethods
         else
           return self 
         end
-      end 
+      end
 
-
-
-      def self.find(*args) #overrides find to get more informations   
+      def self.find(*args) #overrides find to get all attributes  
 
         tuples = super
-        return tuples if tuples.kind_of?(Array) # in case of several tuples just return the tuples as they are
-        #tuples.reload2                         # reload2 is defined in lib/activerecord_ext.rb
-        tuples.class.where(tuples.class[:id].eq(tuples.id))[0]  # in case of only one tuple return a reloaded tuple  based on the class of this tuple
-        # this imply a "full" load of the tuple
-        # A VOIR AVEC LB peut être préfère t il laisser reload2                                                        
+
+        # in case of several tuples just return the tuples as they are
+        return tuples if tuples.kind_of?(Array)
+
+        # in case of only one tuple, return a reloaded tuple based on the class of this tuple
+        tuples.class.where(tuples.class[:id].eq(tuples.id))[0]
+
+        #Was something about reload2 here as well but seems to work fine...?                                                       
       end
 
-
-      def self.delete_all #contrary to destroy_all this is useful to override this method : In fact destroy_all will explicitly call a destroy method on each object
-        #whereas delete_all doesn't and only call a specific SQL request
-        # (to be even more precise delete explictly call delete_all with special conditions )
-
-        self.all.each{|o| o.delete } #call delete method for each instance of the class
-
+      # Unlike destroy_all it is useful to override this method.
+      # In fact destroy_all will explicitly call a destroy method on each object
+      # whereas delete_all doesn't and only calls specific SQL requests.
+      # To be even more precise call delete_all with special conditions
+      def self.delete_all
+        #call delete method for each instance of the class
+        self.all.each{|o| o.delete }
       end
+
+      # Add the functions required for mother classes only
       send :include, MotherInstanceMethods
     end
 
