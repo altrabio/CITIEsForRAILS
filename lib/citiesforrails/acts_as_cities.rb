@@ -146,21 +146,25 @@ module Cities
     module InstanceMethods1
  
       def save
-
-    
-        attributes_for_super = self.attributes.select{|key,value| self.class.superclass.column_names.include?(key) } #get the attributes of the class of the instance that also belong to its superclass 
-        attributes_for_part_of = self.attributes.select{|key,value| !self.class.superclass.column_names.include?(key) } #get the attributes of the class of the instance that do not belong to its superclass
-                                                                                                                        # these pieces of information should be stored in the table associated to the class of the instance
-        herited = self.class.superclass.new(attributes_for_super)   #create a new instance of the superclass of the considered instance (self) 
+        
+        #get the attributes of the class which are inherited from it's parent.
+        attributes_for_super = self.attributes.reject{|key,value| !self.class.superclass.column_names.include?(key) }
+        
+        # Get the attributes of the class which are unique to this class and not inherited.
+        attributes_for_part_of = self.attributes.reject{|key,value| self.class.superclass.column_names.include?(key) }
+        
+        #create a new instance of the superclass, passing the inherited attributes.
+        herited = self.class.superclass.new(attributes_for_super)
+        
         if(!new_record?)
             herited.swap_new_record
             herited.id = self.id
         end
 
         if(herited.class==herited.class.mother_class)
-          herited_saved = herited.save # save the new instance (by calling its save method)      
+          herited_saved = herited.save # save the new parent instance (by calling its save method)      
         else
-          herited_saved = herited.saveBis # save the new instance (by calling its save method)      
+          herited_saved = herited.saveBis # save the new parent instance (by calling its save method)      
         end
     
         if(herited_saved==false) 
