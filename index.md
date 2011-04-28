@@ -14,13 +14,15 @@ Introduction to CITIER
 
 When trying to model a real world problem that needs some information storage into databases, programmers often face the issue which consists in mapping objects to relational databases. After a long review of Rails' existing solutions, I along with the original authors propose a new solution which has been bundled into a gem called : **CITIER** **C**lass **I**nheritance & **T**able **I**nheritance **E**mbeddings for **R**ails
 
-This project is inspired by many articles and previous attempts some of which include:
+This project is inspired by many articles and previous attempts that I and the original authors had already looked into, some of which include:
 
 - [Multiple Table Inheritance with ActiveRecord by Maxim Chernyak](http://mediumexposure.com/multiple-table-inheritance-active-record/)
 - [Heritage Repo](https://github.com/BenjaminMedia/Heritage)
 - [class-table-inheritance Repo](https://github.com/brunofrank/class-table-inheritance)
 - [inherits_from Repo](https://github.com/rwl4/inherits_from)
 - [Mikel - lindsaar.net](http://lindsaar.net/2008/3/12/multi-table-inheritance-in-rails-when-two-tables-are-one)
+- [Xavier Shay](http://rhnh.net/2010/08/15/class-table-inheritance-and-eager-loading)
+- [Xavier Shay #2](http://rhnh.net/2010/07/02/3-reasons-why-you-should-not-use-single-table-inheritance)
 
 But does it do "X"?
 -------------------
