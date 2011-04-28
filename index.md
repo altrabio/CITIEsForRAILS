@@ -7,7 +7,7 @@ Introduction to CITIER
 ======================
 
 
-> NOTE: This was a project originally started by ALTRABio who did most of the underlying work. I have done substantial big fixes and improvements to get it running smoothly and modified and changed the code a lot whilst developing my own projects, but the initial work and planning (including a fair amount of this documentation) was done by them.
+> NOTE: This was a project originally started by ALTRABio. I have done substantial fixes, improvements and code refactoring to get it running smoothly and modified and changed the code a lot whilst developing my own projects, but the initial work and planning (including a fair amount of this documentation) was done by them.
 > To quote the often heard phrase in academia: We stand on the shoulders of giants
 
 **Ruby Class Inheritance & Multiple Table Inheritance Embeddings : A full featured solution based on Ruby Class Inheritance & Views**
