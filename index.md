@@ -37,6 +37,12 @@ This solution already builds on ruby's class inheritance so brings with it all t
 
 Oh ok, go on then... ;)
 
+First install citier & add to Gemfile
+
+{% highlight bash %}
+$ gem install citier
+{% endhighlight %}
+
 {% highlight ruby %}
 
 # Models

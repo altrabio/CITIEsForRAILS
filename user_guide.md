@@ -10,7 +10,7 @@ We give here the details to use our solution. Note that a functional web app imp
 
 You should follow the next steps to use CITIER:
 
-1. Install our gem
+1. Install citier gem
 	{% highlight bash %}
 $ gem install citier
 {% endhighlight %}
