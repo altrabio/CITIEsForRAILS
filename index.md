@@ -53,8 +53,6 @@ class CreateProducts < ActiveRecord::Migration
   end
 end
 
-################################################
-
 class CreateBooks < ActiveRecord::Migration
   def self.up
     create_table :books do |t|
@@ -68,8 +66,6 @@ class CreateBooks < ActiveRecord::Migration
     drop_table :books
   end
 end
-
-################################################
 
 class CreateDictionaries < ActiveRecord::Migration
   def self.up
