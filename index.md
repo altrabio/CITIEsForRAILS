@@ -17,9 +17,10 @@ When trying to model a real world problem that needs some information storage in
 This project is inspired by many articles and previous attempts some of which include:
 
 - [Multiple Table Inheritance with ActiveRecord by Maxim Chernyak](http://mediumexposure.com/multiple-table-inheritance-active-record/)
-- [Heritage](https://github.com/BenjaminMedia/Heritage)
-- [class-table-inheritance](https://github.com/brunofrank/class-table-inheritance)
-- [inherits_from](https://github.com/rwl4/inherits_from)
+- [Heritage Repo](https://github.com/BenjaminMedia/Heritage)
+- [class-table-inheritance Repo](https://github.com/brunofrank/class-table-inheritance)
+- [inherits_from Repo](https://github.com/rwl4/inherits_from)
+- [Mikel - lindsaar.net](http://lindsaar.net/2008/3/12/multi-table-inheritance-in-rails-when-two-tables-are-one)
 
 But does it do "X"?
 -------------------
