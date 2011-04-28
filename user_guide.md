@@ -14,7 +14,7 @@ You should follow the next steps to use CITIER:
 	{% highlight bash %}
 $ gem install citier
 {% endhighlight %}
-or add it to your Gemfile
+    or add it to your Gemfile
 
 2. Model your class inheritance hierarchy [Our Example](problem.html)
 3. Once your class inheritance hierarchy is modeled : determine what we will call the *role* of each class. There are 3 kind of *roles*:
