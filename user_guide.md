@@ -192,8 +192,9 @@ For our example, this mean that we need 5 views :
 
 7. Install our gem
 	{% highlight bash %}
-$ gem install CITIER
+$ gem install citier
 {% endhighlight %}
+or add it to your Gemfile
 
 Final Notes
 -----------
