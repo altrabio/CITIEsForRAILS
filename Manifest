@@ -1,9 +1,9 @@
 Rakefile
-lib/citiesforrails.rb
-lib/citiesforrails/acts_as_cities.rb
-lib/citiesforrails/core_ext.rb
-lib/citiesforrails/class_methods.rb
-lib/citiesforrails/instance_methods.rb
-lib/citiesforrails/child_instance_methods.rb
-lib/citiesforrails/mother_instance_methods.rb
+lib/citierforrails.rb
+lib/citierforrails/acts_as_citier.rb
+lib/citierforrails/core_ext.rb
+lib/citierforrails/class_methods.rb
+lib/citierforrails/instance_methods.rb
+lib/citierforrails/child_instance_methods.rb
+lib/citierforrails/mother_instance_methods.rb
 Manifest
