@@ -11,7 +11,7 @@ module InstanceMethods
       # Delete up the hierarchy
       deleted &= self.class.superclass.delete(self.id)
     end
-    
+
     return deleted
   end
 
@@ -22,43 +22,7 @@ module InstanceMethods
   end
 
   def destroy
-    super
-    if self.class.respond_to?('has_a_part_of?')
-      qdestroy
-    else
-      return self
-    end
-  end
-
-  def qdestroy
-    xxx=self.class
-    qqq=xxx
-
-    while xxx!=ActiveRecord::Base do
-
-      if xxx.respond_to?('has_a_part_of?') # eventually delete pieces of information stored in the write tables associated to the current xxx class for the object (if there is such a table)
-
-        if (xxx.superclass==xxx.mother_class || xxx::Clone!=xxx.superclass::Clone)
-
-          puts "partof for class = #{xxx.name}"
-          xxx::Clone.destroy(self.id)
-          #oo=xxx::Clone.find(self.id)
-          #oo.destroy
-
-        else           
-          puts "no part of for class = #{xxx.name}"                 
-        end#partof
-      end #respond
-
-      qqq=xxx
-      xxx=xxx.superclass
-
-    end #while
-
-    puts "#{qqq.name} should be the mother class"          
-    qqq.delete(self.id) #delete information into the table of the mother class
-
-    return self
+    return self.delete
   end
 
 end
