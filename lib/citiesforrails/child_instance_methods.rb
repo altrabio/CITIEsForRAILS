@@ -24,10 +24,10 @@ module ChildInstanceMethods
       parent.id = self.id
     end
 
-    if(parent.class==parent.class.mother_class)
-      # save the new parent instance (by calling its save method) 
-      parent_saved = parent.save
-    end
+    # if(parent.class==parent.class.mother_class)
+    # save the new parent instance (by calling its save method) 
+    parent_saved = parent.save
+    # end
 
     if(parent_saved==false)
       # Couldn't save parent class
