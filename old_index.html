@@ -860,11 +860,11 @@ href="http://altrabio.github.com/CITIEsForRAILS/index.html#classhierarchy">see f
 	</P>
 </OL>
 <UL>
-	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626">”<FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">mother
-	class” : the “mother class” is the class which will inherit
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626">”<FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">root
+	class” : the “root class” is the class which will inherit
 	from ActiveRecord::Base and from which all of your modeled classes
 	derive. In our example </SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Media</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
-	is the “mother class”.</SPAN></SPAN></FONT></FONT></FONT></P>
+	is the “root class”.</SPAN></SPAN></FONT></FONT></FONT></P>
 	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626">”<FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">class
 	with specific attribute(s)” : this stands for classes that do have
 	specific attributes (attributes that are not included in the classes
@@ -886,9 +886,9 @@ href="http://altrabio.github.com/CITIEsForRAILS/index.html#classhierarchy">see f
 	roles are determined : determine the database schema (it is better
 	if this schema is such that it avoids duplication (<a
 href="http://altrabio.github.com/CITIEsForRAILS/index.html#databaseschema">see for instance our example</a>). Note that the table associated to
-	the mother class requires one extra columns that we will call
+	the root class requires one extra columns that we will call
 	inheritance_column (our solution uses notably Rails Single Table
-	Inheritance facility). (To sum up : the “mother class”
+	Inheritance facility). (To sum up : the “root class”
 	necessitates a table with columns : id, inheritance_column and a
 	column per attribute ; each ”class with specific attribute(s)”
 	necessitates a table with columns : id and a column per specific
@@ -1162,7 +1162,7 @@ href="http://altrabio.github.com/CITIEsForRAILS/index.html#databaseview">see for
 	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Now
 	you have to indicate for each classes its role. This is done into
 	your models definitions by adding the special phrase : “acts_as_cities”
-	only for the mother_class and for each ”class with specific
+	only for the root_class and for each ”class with specific
 	attribute(s)”. This special phrase may be accompanied by an
 	optional option hash :
 	{:table_name=&gt;'name_of_the_table_associated_with_the_class' ,

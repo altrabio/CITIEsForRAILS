@@ -12,10 +12,10 @@ You should follow the next steps to use CITIEsForRails:
 
 1. Model your class inheritance hierarchy [Our Example](problem.html)
 2. Once your class inheritance hierarchy is modeled : determine what we will call the *role* of each class. There are 3 kind of *roles*:
-	- **"mother class"** : the “mother class" is the class which will inherit from ActiveRecord::Base and from which all of your modeled classes derive. In our example Media is the “mother class".
+	- **"root class"** : the “root class" is the class which will inherit from ActiveRecord::Base and from which all of your modeled classes derive. In our example Media is the “root class".
 	- **"class with specific attribute(s)"** : this stands for classes that do have specific attributes (attributes that are not included in the classes they derive from). In our example Audio, Video, Book, Novel, Dictionary are "classes with specific attribute(s)".
 	- **"class without specific attribute(s)"** : this stands for classes that do NOT have specific attributes. In our example Mp3, PocketDictionary, Unknown are "classes without specific attribute(s)".
-3. Once roles are determined : determine the database schema (it is better if this schema is such that it avoids duplication (see for instance [our example](new_solution.html)). Note that the table associated to the mother class requires one extra columns that we will call inheritance_column (our solution uses notably Rails Single Table Inheritance facility). (To sum up : the “mother class" necessitates a table with columns : id, inheritance_column and a column per attribute ; each "class with specific attribute(s)" necessitates a table with columns : id and a column per specific attribute)
+3. Once roles are determined : determine the database schema (it is better if this schema is such that it avoids duplication (see for instance [our example](new_solution.html)). Note that the table associated to the root class requires one extra columns that we will call inheritance_column (our solution uses notably Rails Single Table Inheritance facility). (To sum up : the “root class" necessitates a table with columns : id, inheritance_column and a column per attribute ; each "class with specific attribute(s)" necessitates a table with columns : id and a column per specific attribute)
 For our example, this mean that we need 6 tables :
 	- Table medias with columns id, inheritance_column, price and name
 	- Table audio with columns id, title and genre
@@ -128,7 +128,7 @@ For our example, this mean that we need 5 views :
 	
 	{% endhighlight %}
 
-6. 	Now you have to indicate for each classes its role. This is done into your models definitions by adding the special phrase : “acts\_as\_cities” only for the mother\_class and for each ”class with specific attribute(s)”. This special phrase may be accompanied by an optional option hash : {:table\_name=>'name\_of\_the\_table\_associated\_with\_the\_class' , :db\_type\_field=>'name_of_the_inheritance_column'}. Note that default values for these options are respectively the pluralized name of the class for :table\_name and 'type' for :db\_type\_field. For our example this would imply the following:
+6. 	Now you have to indicate for each classes its role. This is done into your models definitions by adding the special phrase : “acts\_as\_cities” only for the root\_class and for each ”class with specific attribute(s)”. This special phrase may be accompanied by an optional option hash : {:table\_name=>'name\_of\_the\_table\_associated\_with\_the\_class' , :db\_type\_field=>'name_of_the_inheritance_column'}. Note that default values for these options are respectively the pluralized name of the class for :table\_name and 'type' for :db\_type\_field. For our example this would imply the following:
 	
 	{% highlight ruby %}
 	
