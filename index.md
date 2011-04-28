@@ -26,12 +26,12 @@ But does it do "X"?
 I have a list of things I want to be able to do when handling models, which most of the other solutions *kind* of cover. Usually managing one but failing on another.
 This solution already builds on ruby's class inheritance so brings with it all the OO goodness! Hurrah!
 
-- Multi Table Inheritance - YES
-- Single Table Inheritance - YES
-- Class Inheritance - YES
-- Validator inheritance - YES
-- Functions inherited from parent - YES
-- Stuff which is really cool but I haven't thought of yet - Probably!
+- *Multi Table Inheritance* - **YES**
+- *Single Table Inheritance* - **YES**
+- *Class Inheritance* - **YES**
+- *Validators inherited from parents* - **YES**
+- *Functions inherited from parents* - **YES**
+- *Stuff which is really cool but I haven't thought of yet* - **Probably!**
 
 **Enough! This sounds awesome! Show me how it works!**
 Oh ok, go on then... ;)
