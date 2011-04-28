@@ -3,19 +3,17 @@ module InstanceMethods
   # Delete the model (and all parents it inherits from if applicable)
   def delete(id = self.id)
     cities_debug("Deleting #{self.class.to_s} with ID #{self.id}")
-    
+
     # Delete information stored in the table associated to the class of the object
     # (if there is such a table)
     deleted = true
-    if(self.class.superclass!=ActiveRecord::Base)
-      cities_debug("Deleting self")
-      deleted &= self.class::Clone.delete(id)
-      cities_debug("Deleting back up hierarchy")
-      deleted &= self.class.superclass::Clone.delete(id)
-    else
-      deleted &= self.class.delete(id)
+    c = self.class
+    while c.superclass!=ActiveRecord::Base
+      cities_debug("Deleting back up hierarchy #{c}")
+      deleted &= c::Writable.delete(id)
+      c = c.superclass
     end
-
+    deleted &= c.delete(id)
     return deleted
   end
 

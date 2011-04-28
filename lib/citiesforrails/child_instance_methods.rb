@@ -38,7 +38,7 @@ module ChildInstanceMethods
     # If there are attributes for the current class (unique & not inherited) 
     # and parent(s) saved successfully, save current model
     if(!attributes_for_current.empty? && parent_saved)
-      current = self.class::Clone.new(attributes_for_current) 
+      current = self.class::Writable.new(attributes_for_current) 
       current.id = parent.id
 
       if(!new_record?)

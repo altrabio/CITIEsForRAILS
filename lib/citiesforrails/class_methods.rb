@@ -23,9 +23,9 @@ module ClassMethods
 
       cities_debug("tablename (view) -> #{self.table_name}")
 
-      # The the Clone. References the write-able table for the class because
+      # The the Writable. References the write-able table for the class because
       # save operations etc can't take place on the views
-      self.const_set("Clone", create_class_clone(self))
+      self.const_set("Writable", create_class_writable(self))
 
       # Add the functions required for children only
       send :include, ChildInstanceMethods
