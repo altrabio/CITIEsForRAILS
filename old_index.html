@@ -6,10 +6,10 @@
 
 
 
-	<title>CITIEsForRAILS Class Inheritance & Table Inheritance Embeddings For RAILS : a solution that extends Single / Multiple / Class Table Inheritance</title>
+	<title>CITIER Class Inheritance & Table Inheritance Embeddings For RAILS : a solution that extends Single / Multiple / Class Table Inheritance</title>
 
 <meta name="keywords" CONTENT ="multiple table inheritance,class table inheritance,multi table inheritance,table inheritance,single table inheritance,class inheritance,active record,activerecord,rails,ROR,ruby,views,object mapping,solutions,tutorial">
-<meta name="description" content="CITIEsForRAILS (Class Inheritance & Table Inheritance Embeddings For RAILS) is a solution that extends Single/Multiple/Class Table Inheritance. This solution is based on classical Ruby class inheritance, single table inheritance as well as DB views.  ">
+<meta name="description" content="CITIER (Class Inheritance & Table Inheritance Embeddings For RAILS) is a solution that extends Single/Multiple/Class Table Inheritance. This solution is based on classical Ruby class inheritance, single table inheritance as well as DB views.  ">
 <meta name="Revisit-after" CONTENT="14 days">
 <meta nameE="Robots" CONTENT="all">
 <meta name http-equiv="Content-Language" content="en">
@@ -41,14 +41,14 @@
 </head>
 
 <body>
-  <a href="http://github.com/altrabio/CITIEsForRAILS"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+  <a href="http://github.com/altrabio/CITIER"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 
   <div id="container">
 
     <div class="download">
-      <a href="http://github.com/altrabio/CITIEsForRAILS/zipball/master">
+      <a href="http://github.com/altrabio/CITIER/zipball/master">
         <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/altrabio/CITIEsForRAILS/tarball/master">
+      <a href="http://github.com/altrabio/CITIER/tarball/master">
         <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
     </div>
 
@@ -219,7 +219,7 @@ attributes will likely differ : </SPAN></SPAN></FONT></FONT></FONT>
 				<FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3>The
 				inheritance «&nbsp;hierarchy&nbsp;» would look like :</FONT></FONT></FONT></P>
 
-				<P  ALIGN=LEFT STYLE="font-style: normal; font-weight: normal"><IMG SRC="https://github.com/altrabio/CITIEsForRAILS/raw/master/description%20altrabio%20CVI_html_mf61ca4a.gif" NAME="images5" ALIGN=LEFT WIDTH=740 HEIGHT=606 BORDER=0><BR CLEAR=LEFT><BR>
+				<P  ALIGN=LEFT STYLE="font-style: normal; font-weight: normal"><IMG SRC="https://github.com/altrabio/CITIER/raw/master/description%20altrabio%20CVI_html_mf61ca4a.gif" NAME="images5" ALIGN=LEFT WIDTH=740 HEIGHT=606 BORDER=0><BR CLEAR=LEFT><BR>
 				</P>
 			</TD>
 		</TR>
@@ -633,7 +633,7 @@ some cases (that we enumerate below) this won't be enough.</FONT></FONT></FONT><
 <FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><B>Flat
 Class Hierarchy / One level Class Hierarchy :</B></FONT></FONT></FONT></P>
 <P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
-<IMG SRC="https://github.com/altrabio/CITIEsForRAILS/raw/master/description%20altrabio%20CVI_html_m606338ff.gif" NAME="images3" ALIGN=LEFT WIDTH=1036 HEIGHT=290 BORDER=0><BR CLEAR=LEFT><BR><BR>
+<IMG SRC="https://github.com/altrabio/CITIER/raw/master/description%20altrabio%20CVI_html_m606338ff.gif" NAME="images3" ALIGN=LEFT WIDTH=1036 HEIGHT=290 BORDER=0><BR CLEAR=LEFT><BR><BR>
 </P>
 <P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 <BR><BR>
@@ -659,7 +659,7 @@ won't get here into a deep technical explanation of how our solution
 works but just give some very low level insights (maybe in near
 future we'll provide some more details ; yet, interested reader
 should refer to our commentated code, which can be grabbed <a
-href="https://github.com/altrabio/test-application-for-CITIEsForRAILS">here</a>).  Thereafter, we first introduce features offered by
+href="https://github.com/altrabio/test-application-for-CITIER">here</a>).  Thereafter, we first introduce features offered by
 our solution, give some brief informations related to the basic ideas
 that drove us for implementing this solution, and finally explain how
 to use it. Obviously, the explanations concerning the implementation
@@ -687,7 +687,7 @@ A Full Featured Solution</B></FONT></FONT></FONT></P>
 	solution is firstly based on Ruby's class inheritance. For our
 	example, the inheritance hierachy is the one that a programmer would
 	expect (<a
-href="http://altrabio.github.com/CITIEsForRAILS/index.html#classhierarchy">see it here</a>).  This means that if you have defined some instance
+href="http://altrabio.github.com/CITIER/index.html#classhierarchy">see it here</a>).  This means that if you have defined some instance
 	methods/variables or class methods/variables in a superclass you can
 	have a natural access to it. This also means that a real "is_a"
 	relationship is used and that multi level inheritance hierarchy can
@@ -747,7 +747,7 @@ href="http://altrabio.github.com/CITIEsForRAILS/index.html#classhierarchy">see i
 	solutions.</SPAN></SPAN></FONT></FONT></FONT></P>
 	<P id="databaseschema" ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><B><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal">Database
 	Schema :</SPAN></FONT></FONT></FONT></B></P>
-	<P  ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><IMG SRC="https://github.com/altrabio/CITIEsForRAILS/raw/master/description%20altrabio%20CVI_html_mac2489d.gif" NAME="images6" ALIGN=LEFT WIDTH=740 HEIGHT=339 BORDER=0><BR CLEAR=LEFT><FONT COLOR="#262626">
+	<P  ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><IMG SRC="https://github.com/altrabio/CITIER/raw/master/description%20altrabio%20CVI_html_mac2489d.gif" NAME="images6" ALIGN=LEFT WIDTH=740 HEIGHT=339 BORDER=0><BR CLEAR=LEFT><FONT COLOR="#262626">
 	</FONT>
 	</P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"></P>
@@ -758,7 +758,7 @@ Solution Philosophy at a glance</B></FONT></FONT></FONT></P>
 <P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">The
 philosophy used to implement this solution is the following, for each
 node of the class hierarchy (<a
-href="http://altrabio.github.com/CITIEsForRAILS/index.html#classhierarchy">see it here</a>) (does not depend on the
+href="http://altrabio.github.com/CITIER/index.html#classhierarchy">see it here</a>) (does not depend on the
 fact that it has or not any specific attribute) we would like to use
 ActiveRecord facilities to manipulate it (this means using
 ActiveRecord facilities to save an object, update an object, load an
@@ -767,7 +767,7 @@ classically ActiveRecords would imply to use a specific table for
 each class, yet this would not respect the constraints required
 related to the storage. (this would not fit with our database schema
 constraints defined before, <a
-href="http://altrabio.github.com/CITIEsForRAILS/index.html#databaseschema">see it here</a>). </SPAN></SPAN></FONT></FONT></FONT>
+href="http://altrabio.github.com/CITIER/index.html#databaseschema">see it here</a>). </SPAN></SPAN></FONT></FONT></FONT>
 </P>
 <P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">So
 what we propose here is just to have a mechanism that fake the
@@ -797,7 +797,7 @@ what happen behind the curtains when using our gem :</FONT></FONT></FONT></P>
 
 
 <B>  <a
-href="http://altrabio.github.com/CITIEsForRAILS/index.html#classhierarchy">
+href="http://altrabio.github.com/CITIER/index.html#classhierarchy">
 See class hierarchy here </a>   </B>
 
 
@@ -807,7 +807,7 @@ See class hierarchy here </a>   </B>
 
 
 <B>  <a
-href="http://altrabio.github.com/CITIEsForRAILS/index.html#databaseschema">
+href="http://altrabio.github.com/CITIER/index.html#databaseschema">
 See database schema here </a>   </B>
 
 
@@ -817,13 +817,13 @@ See database schema here </a>   </B>
 Views </B></FONT></FONT></FONT>
 </P>
 <P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; line-height: 100%">
-<IMG SRC="https://github.com/altrabio/CITIEsForRAILS/raw/master/description%20altrabio%20CVI_html_444ebff4.gif" NAME="images2" ALIGN=LEFT WIDTH=740 HEIGHT=363 BORDER=0><BR CLEAR=LEFT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><B>Class
+<IMG SRC="https://github.com/altrabio/CITIER/raw/master/description%20altrabio%20CVI_html_444ebff4.gif" NAME="images2" ALIGN=LEFT WIDTH=740 HEIGHT=363 BORDER=0><BR CLEAR=LEFT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><B>Class
 Hierarchy &amp; Associated Tables / Views</B></FONT></FONT></FONT></P>
 
 
 
 <P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
-<IMG SRC="https://github.com/altrabio/CITIEsForRAILS/raw/master/description%20altrabio%20CVI_html_2c774f35.gif" NAME="images1" ALIGN=LEFT WIDTH=1480 HEIGHT=1183 BORDER=0><BR CLEAR=LEFT><BR><BR>
+<IMG SRC="https://github.com/altrabio/CITIER/raw/master/description%20altrabio%20CVI_html_2c774f35.gif" NAME="images1" ALIGN=LEFT WIDTH=1480 HEIGHT=1183 BORDER=0><BR CLEAR=LEFT><BR><BR>
 </P>
 
 
@@ -838,7 +838,7 @@ CITIER User's Guide</B></FONT></FONT></FONT></P>
 give here the  details to use our solution. Note that a functional
 web app implementing the multimedia library example is available 
 <a
-href="https://github.com/altrabio/test-application-for-CITIEsForRAILS">here</a>. It may be worth having a look at it since each
+href="https://github.com/altrabio/test-application-for-CITIER">here</a>. It may be worth having a look at it since each
 specific code entry necessitated by the use of our plugin has been
 associated with a “#needed for CITIER” comment. Moreover
 some extra Comments &amp; BookComments objects have been added to
@@ -853,7 +853,7 @@ should follow the next steps to use <B>CITIER :</B> </FONT></FONT></FONT>
 <OL>
 	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Model
 	your class inheritance hierarchy (<a
-href="http://altrabio.github.com/CITIEsForRAILS/index.html#classhierarchy">see for instance our example</a>)</SPAN></SPAN></FONT></FONT></FONT></P>
+href="http://altrabio.github.com/CITIER/index.html#classhierarchy">see for instance our example</a>)</SPAN></SPAN></FONT></FONT></FONT></P>
 	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Once
 	your class inheritance hierarchy is modeled : determine what we will
 	call the role of each class. There are 3 kind of roles : </SPAN></SPAN></FONT></FONT></FONT>
@@ -885,7 +885,7 @@ href="http://altrabio.github.com/CITIEsForRAILS/index.html#classhierarchy">see f
 	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Once
 	roles are determined : determine the database schema (it is better
 	if this schema is such that it avoids duplication (<a
-href="http://altrabio.github.com/CITIEsForRAILS/index.html#databaseschema">see for instance our example</a>). Note that the table associated to
+href="http://altrabio.github.com/CITIER/index.html#databaseschema">see for instance our example</a>). Note that the table associated to
 	the root class requires one extra columns that we will call
 	inheritance_column (our solution uses notably Rails Single Table
 	Inheritance facility). (To sum up : the “root class”
@@ -922,7 +922,7 @@ href="http://altrabio.github.com/CITIEsForRAILS/index.html#databaseschema">see f
 	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Determine
 	views that are needed (one per ”class with specific attribute(s)”)
 	(<a
-href="http://altrabio.github.com/CITIEsForRAILS/index.html#databaseview">see for instance our example</a>) . Such views may be
+href="http://altrabio.github.com/CITIER/index.html#databaseview">see for instance our example</a>) . Such views may be
 	created thanks to the provided function CreateTheViewForCITIEs(class)
 	or dropped with the provided function DropTheViewForCITIEs(class) . </SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><I><SPAN STYLE="font-weight: normal">For
 	our example, this mean that we need 5 views :</SPAN></I></FONT></FONT></FONT></P>
