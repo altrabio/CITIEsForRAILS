@@ -23,6 +23,7 @@ This project is inspired by many articles and previous attempts that I and the o
 - [Mikel - lindsaar.net](http://lindsaar.net/2008/3/12/multi-table-inheritance-in-rails-when-two-tables-are-one)
 - [Xavier Shay](http://rhnh.net/2010/08/15/class-table-inheritance-and-eager-loading)
 - [Xavier Shay #2](http://rhnh.net/2010/07/02/3-reasons-why-you-should-not-use-single-table-inheritance)
+- [Gerry](http://techspry.com/ruby_and_rails/multiple-table-inheritance-in-rails-3/)
 
 But does it do "X"?
 -------------------
