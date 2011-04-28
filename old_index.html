@@ -77,7 +77,7 @@ ALTRABio under MIT License</I></FONT></FONT></FONT><FONT COLOR="#000000"><FONT F
 <P ALIGN=RIGHT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#535353"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=4><I>Authors
 : L. Buffat, P.E. Jouve</I></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Monaco, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN></SPAN></FONT></FONT></FONT></P>
 <P ALIGN=RIGHT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#535353"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=4><I>Contact
-: citiesforrails”the_at_sign”gmail.com</I></FONT></FONT></FONT></P>
+: citierforrails”the_at_sign”gmail.com</I></FONT></FONT></FONT></P>
 <P ALIGN=RIGHT STYLE="margin-bottom: 0.74cm; line-height: 100%"><BR><BR>
 </P>
 <P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><BR><BR>
@@ -1161,7 +1161,7 @@ href="http://altrabio.github.com/CITIER/index.html#databaseview">see for instanc
 	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">#--------------------------------------</FONT></FONT></FONT></P>
 	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Now
 	you have to indicate for each classes its role. This is done into
-	your models definitions by adding the special phrase : “acts_as_cities”
+	your models definitions by adding the special phrase : “acts_as_citier”
 	only for the root_class and for each ”class with specific
 	attribute(s)”. This special phrase may be accompanied by an
 	optional option hash :
@@ -1176,7 +1176,7 @@ href="http://altrabio.github.com/CITIER/index.html#databaseview">see for instanc
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">class
 	Media &lt; ActiveRecord::Base</SPAN></SPAN></FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626">
-	 <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">acts_as_cities
+	 <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">acts_as_citier
 		#default values are used there since the table associated to Media
 	class is medias and the inheritance column is named type</SPAN></SPAN></FONT></FONT></FONT></P>
 	<OL>
@@ -1200,7 +1200,7 @@ href="http://altrabio.github.com/CITIER/index.html#databaseview">see for instanc
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><FONT COLOR="#262626">class
 	Audio &lt; Media</FONT></FONT></FONT></SPAN></SPAN></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
-	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">acts_as_cities</FONT></FONT></FONT></P>
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">acts_as_citier</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
@@ -1214,7 +1214,7 @@ href="http://altrabio.github.com/CITIER/index.html#databaseview">see for instanc
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal"><FONT SIZE=1 STYLE="font-size: 8pt">class
 	Book &lt; Media</FONT></SPAN></SPAN></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626">
-	 <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">acts_as_cities
+	 <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">acts_as_citier
 	:table_name=&gt;'tablebooks'   #here we need to specify
 	:table_name=&gt;'books' since the table associated to Book class is
 	tablebooks and not book</SPAN></SPAN></FONT></FONT></FONT></P>
@@ -1226,7 +1226,7 @@ href="http://altrabio.github.com/CITIER/index.html#databaseview">see for instanc
 	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">class
 	Dictionary &lt; Book</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
-	<FONT COLOR="#262626"> <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">acts_as_cities</FONT></FONT></FONT></P>
+	<FONT COLOR="#262626"> <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">acts_as_citier</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
@@ -1235,7 +1235,7 @@ href="http://altrabio.github.com/CITIER/index.html#databaseview">see for instanc
 	Novel &lt; Book</SPAN></SPAN></FONT></FONT></FONT></P>
 	<OL>
 		<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
-		<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">acts_as_cities</FONT></FONT></FONT></P>
+		<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">acts_as_citier</FONT></FONT></FONT></P>
 	</OL>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
@@ -1257,7 +1257,7 @@ href="http://altrabio.github.com/CITIER/index.html#databaseview">see for instanc
 	<FONT COLOR="#262626"><FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">class
 	Video &lt; Media</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
-	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">acts_as_cities</FONT></FONT></FONT></P>
+	<FONT COLOR="#262626">  <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">acts_as_citier</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
 	<FONT COLOR="#262626"> <FONT FACE="Monaco, monospace"><FONT SIZE=1 STYLE="font-size: 8pt">end</FONT></FONT></FONT></P>
 	<P ALIGN=LEFT STYLE="margin-bottom: 0.74cm; font-style: normal; font-weight: normal; line-height: 100%">
@@ -1322,7 +1322,7 @@ this gem...</SPAN></SPAN></FONT></FONT></FONT></P>
 	<P ALIGN=CENTER STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT SIZE=7 STYLE="font-size: 32pt"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Give
 	us some feed back at : </SPAN></SPAN></FONT></FONT></FONT>
 	</P>
-	<P ALIGN=CENTER STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT SIZE=7 STYLE="font-size: 32pt"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">citiesforrails”the_at_sign”gmail.com</SPAN></SPAN></FONT></FONT></FONT></P>
+	<P ALIGN=CENTER STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT SIZE=7 STYLE="font-size: 32pt"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">citierforrails”the_at_sign”gmail.com</SPAN></SPAN></FONT></FONT></FONT></P>
 	<P ALIGN=CENTER STYLE="margin-bottom: 0.74cm; line-height: 100%"></P>
 	<P ALIGN=CENTER STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;</FONT><FONT COLOR="#000000">&nbsp;&nbsp;</FONT></P>
 	<P ALIGN=CENTER STYLE="margin-bottom: 0.74cm; line-height: 100%"><FONT COLOR="#262626"><FONT FACE="Optima-Regular, sans-serif"><FONT SIZE=7 STYLE="font-size: 32pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">-----------------------------------------------------------------</SPAN></SPAN></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Monaco, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">&nbsp;&nbsp;</SPAN></SPAN></FONT></FONT></FONT></P>

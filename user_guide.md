@@ -128,7 +128,7 @@ For our example, this mean that we need 5 views :
 	
 	{% endhighlight %}
 
-6. 	Now you have to indicate for each classes its role. This is done into your models definitions by adding the special phrase : “acts\_as\_cities” only for the root\_class and for each ”class with specific attribute(s)”. This special phrase may be accompanied by an optional option hash : {:table\_name=>'name\_of\_the\_table\_associated\_with\_the\_class' , :db\_type\_field=>'name_of_the_inheritance_column'}. Note that default values for these options are respectively the pluralized name of the class for :table\_name and 'type' for :db\_type\_field. For our example this would imply the following:
+6. 	Now you have to indicate for each classes its role. This is done into your models definitions by adding the special phrase : “acts\_as\_citier” only for the root\_class and for each ”class with specific attribute(s)”. This special phrase may be accompanied by an optional option hash : {:table\_name=>'name\_of\_the\_table\_associated\_with\_the\_class' , :db\_type\_field=>'name_of_the_inheritance_column'}. Note that default values for these options are respectively the pluralized name of the class for :table\_name and 'type' for :db\_type\_field. For our example this would imply the following:
 	
 	{% highlight ruby %}
 	
@@ -138,13 +138,13 @@ For our example, this mean that we need 5 views :
 	# mention non default value for :table name when needed
 		
 	class Media < ActiveRecord::Base
-	  acts_as_cities 
+	  acts_as_citier 
 	end
 	
 	################################################
 	
 	class Audio < Media
-	  acts_as_cities
+	  acts_as_citier
 	end
 	
 	################################################
@@ -158,19 +158,19 @@ For our example, this mean that we need 5 views :
 	# is tablebooks and not book
 	
 	class Book < Media
-	  acts_as_cities :table_name=>'tablebooks'
+	  acts_as_citier :table_name=>'tablebooks'
 	end
 	
 	################################################
 	
 	class Dictionary < Book
-	  acts_as_cities
+	  acts_as_citier
 	end
 	
 	################################################
 	
 	class Novel < Book
-	  acts_as_cities
+	  acts_as_citier
 	end
 	
 	################################################
@@ -186,7 +186,7 @@ For our example, this mean that we need 5 views :
 	################################################
 	
 	class Video < Media
-	  acts_as_cities
+	  acts_as_citier
 	end
 	{% endhighlight %}
 
@@ -199,4 +199,4 @@ Final Notes
 -----------
 Whenever you modify a table (adding removing columns) please consider (if necessary) to update the (eventually) corresponding view. This can be done by successively Dropping and re-Creating the view (thanks to the DropTheViewForCITIEs and CreateTheViewForCITIEs methods)
 
-We encourage you to try, test, use, enhance and document this gem. If you do, please give us some feed back at: citiesforrails[at]gmail.com
+We encourage you to try, test, use, enhance and document this gem. If you do, please give us some feed back at: citierforrails[at]gmail.com
