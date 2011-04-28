@@ -79,7 +79,7 @@ end
 #       Some functions to manage views creation & dropping                                        #
 #                                                                                               #
 #-----------------------------------------------------------------------------------------------#
-def CreateCitierView(theclass)  #function for creating views for migrations 
+def create_citier_view(theclass)  #function for creating views for migrations 
 
   if RAILS_ENV == 'development'
     puts "CreateTheView 1"
@@ -108,7 +108,7 @@ def CreateCitierView(theclass)  #function for creating views for migrations
   theclass.connection.execute sql
 end
 
-def DropCitierView(theclass) #function for dropping views for migrations 
+def drop_citier_view(theclass) #function for dropping views for migrations 
   if RAILS_ENV == 'development'
     puts "1 DropTheViewForCITIEs"
   end
