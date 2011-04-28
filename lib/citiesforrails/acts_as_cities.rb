@@ -5,14 +5,14 @@ $LOAD_PATH.unshift(path) unless $LOAD_PATH.include?(path)
 # Methods which will be used by the class
 require 'class_methods'
 
-# Methods that will be used for the instances of the Non Mother Classes
+# Methods that will be used for the instances of the Non Root Classes
 require 'instance_methods'
 
-# Methods that will be used for the instances of the Non Mother Classes
+# Methods that will be used for the instances of the Non Root Classes
 require 'child_instance_methods'
 
-# Methods that will be used for the instances of the Mother Classes
-require 'mother_instance_methods'
+# Methods that will be used for the instances of the Root Classes
+require 'root_instance_methods'
 
 module Cities
   def self.included(base) 

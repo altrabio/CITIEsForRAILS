@@ -1,4 +1,4 @@
-module MotherInstanceMethods
+module RootInstanceMethods
 
   include InstanceMethods
 

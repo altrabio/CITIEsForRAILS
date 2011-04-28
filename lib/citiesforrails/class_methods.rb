@@ -13,9 +13,9 @@ module ClassMethods
     set_inheritance_column "#{db_type_field}"
 
     if(self.superclass!=ActiveRecord::Base)
-      # Non mother-class
+      # Non root-class
 
-      cities_debug("Non Mother Class")
+      cities_debug("Non Root Class")
       cities_debug("table_name -> #{table_name}")
       
       # Set up the table which contains ALL attributes we want for this class
@@ -30,19 +30,19 @@ module ClassMethods
       # Add the functions required for children only
       send :include, ChildInstanceMethods
     else
-      # Mother class
+      # Root class
 
       after_save :updatetype
 
-      cities_debug("Mother Class")
+      cities_debug("Root Class")
       
       set_table_name "#{table_name}"
       
       cities_debug("table_name -> #{self.table_name}")
 
-      def self.mother_class #returns the mother class (the highest inherited class before ActiveRecord) 
+      def self.root_class #returns the root class (the highest inherited class before ActiveRecord) 
         if(self.superclass!=ActiveRecord::Base)  
-          self.superclass.mother_class
+          self.superclass.root_class
         else
           return self 
         end
@@ -70,8 +70,8 @@ module ClassMethods
         self.all.each{|o| o.delete }
       end
 
-      # Add the functions required for mother classes only
-      send :include, MotherInstanceMethods
+      # Add the functions required for root classes only
+      send :include, RootInstanceMethods
     end
 
 

@@ -18,7 +18,7 @@ module InstanceMethods
   end
 
   def updatetype        
-    sql = "UPDATE #{self.class.mother_class.table_name} SET #{self.class.inheritance_column} = '#{self.class.to_s}' WHERE id = #{self.id}"
+    sql = "UPDATE #{self.class.root_class.table_name} SET #{self.class.inheritance_column} = '#{self.class.to_s}' WHERE id = #{self.id}"
     self.connection.execute(sql)
     cities_debug("#{sql}")
   end

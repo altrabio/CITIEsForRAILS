@@ -53,7 +53,7 @@ module ActiveRecord
     def destroy
 
       if persisted?     
-        if (self.class.respond_to?("mother_class"))&&(self.class.table_name[0]=="v" && self.class.table_name[1]=="i" && self.class.table_name[2]=="e" && self.class.table_name[3]=="w" && self.class.table_name[4]=="_")
+        if (self.class.respond_to?("root_class"))&&(self.class.table_name[0]=="v" && self.class.table_name[1]=="i" && self.class.table_name[2]=="e" && self.class.table_name[3]=="w" && self.class.table_name[4]=="_")
           #if the class of the object is based on this gem and if the considered table is a view
           puts"modified version of ActiveRecord::Persistence destroy"       
           puts "class = #{self.class.name} table name=#{self.class.table_name} this is a view : skipping some instructions"

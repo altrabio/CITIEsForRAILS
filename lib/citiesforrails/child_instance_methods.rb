@@ -4,10 +4,10 @@ module ChildInstanceMethods
 
     if(self.class.superclass==ActiveRecord::Base)
       #This is the highest class you can get to, just save the model
-      cities_debug("Mother Class #{self.class.to_s}")
+      cities_debug("Root Class #{self.class.to_s}")
     else
-      # Non mother class, continue with saving parent etc
-      cities_debug("Non-Mother Class #{self.class.to_s}")
+      # Non root class, continue with saving parent etc
+      cities_debug("Non-Root Class #{self.class.to_s}")
     end
 
     #get the attributes of the class which are inherited from it's parent.
@@ -24,7 +24,7 @@ module ChildInstanceMethods
       parent.id = self.id
     end
 
-    # if(parent.class==parent.class.mother_class)
+    # if(parent.class==parent.class.root_class)
     # save the new parent instance (by calling its save method) 
     parent_saved = parent.save
     # end
@@ -53,7 +53,7 @@ module ChildInstanceMethods
 
     self.id = parent.id
 
-    sql = "UPDATE #{self.class.mother_class.table_name} SET #{self.class.inheritance_column} = '#{self.class.to_s}' WHERE id = #{self.id}"
+    sql = "UPDATE #{self.class.root_class.table_name} SET #{self.class.inheritance_column} = '#{self.class.to_s}' WHERE id = #{self.id}"
     cities_debug("SQL : #{sql}")
     self.connection.execute(sql)
     return parent_saved && current_saved
