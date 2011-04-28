@@ -24,7 +24,7 @@ This project is inspired by many articles and previous attempts some of which in
 **Enough! This sounds awesome! Show me how it works!**
 Oh ok, go on then ;)
 
-{% highlight >> %}
+{% highlight ruby %}
 
 # Models
 class Media < ActiveRecord::Base
