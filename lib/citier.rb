@@ -2,7 +2,7 @@ CITIER_DEBUGGING = (::Rails.env == 'development')
 
 def citier_debug(s)
   if CITIER_DEBUGGING
-    puts "citierforrails -> " + s
+    puts "citier -> " + s
   end
 end
 
