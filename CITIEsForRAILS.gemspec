@@ -2,18 +2,33 @@
 
 Gem::Specification.new do |s|
   s.name = %q{CITIEsForRAILS}
-  s.version = "0.0.5"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Laurent Buffat & Pierre-Emmanuel JOUVE"]
-  s.date = %q{2011-02-16}
+  s.authors = ["Laurent Buffat, Pierre-Emmanuel Jouve & Peter Hamilton"]
+  s.date = %q{2011-04-28}
   s.description = %q{CITIEsForRAILS (Class Inheritance & Table Inheritance Embeddings For RAILS) is a solution that extends Single/Multiple/Class Table Inheritance. This solution is based on classical Ruby class inheritance, single table inheritance as well as DB views.
 
 
   For Full Information GO TO : http://altrabio.github.com/CITIEsForRAILS/}
   s.email = %q{citiesforrails @nospam@ gmail.com}
-  s.extra_rdoc_files = ["lib/citiesforrails.rb", "lib/citiesforrails/acts_as_cities.rb", "lib/citiesforrails/core_ext.rb"]
-  s.files = ["Rakefile", "lib/citiesforrails.rb", "lib/citiesforrails/acts_as_cities.rb", "lib/citiesforrails/core_ext.rb", "Manifest", "CITIEsForRAILS.gemspec"]
+  s.extra_rdoc_files = ["lib/citiesforrails.rb",
+    "lib/citiesforrails/acts_as_cities.rb",
+    "lib/citiesforrails/core_ext.rb",
+    "lib/citiesforrails/class_methods.rb",
+    "lib/citiesforrails/instance_methods.rb",
+    "lib/citiesforrails/child_instance_methods.rb",
+    "lib/citiesforrails/mother_instance_methods.rb"]
+  s.files = ["Rakefile",
+    "lib/citiesforrails.rb",
+    "lib/citiesforrails/acts_as_cities.rb",
+    "lib/citiesforrails/core_ext.rb",
+    "lib/citiesforrails/class_methods.rb",
+    "lib/citiesforrails/instance_methods.rb",
+    "lib/citiesforrails/child_instance_methods.rb",
+    "lib/citiesforrails/mother_instance_methods.rb",
+    "Manifest",
+    "CITIEsForRAILS.gemspec"]
   s.homepage = %q{https://github.com/altrabio/CITIEsForRAILS}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "CITIEsForRAILS", "--main", "README"]
   s.require_paths = ["lib"]
