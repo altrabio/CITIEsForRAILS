@@ -88,6 +88,8 @@ end
 
 You will see some code below only visible in development mode, preceeded by "citier -> "
 Shows examples of creation, automatic child class identification and deletion. Also works with "delete_all", destroy and destroy\_all functions.
+
+A very simple app has been created as a branch to this project if you wish to have a play. It will also be used to test future functionality
 {% highlight bash %}
 
 $ rails console
@@ -122,5 +124,4 @@ citier -> Deleting back up hierarchy Book
  => true 
 >> :007 > Dictionary.all()
  => [] 
->> :008 > 
 {% endhighlight %}
