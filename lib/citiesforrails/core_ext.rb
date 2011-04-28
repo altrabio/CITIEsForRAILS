@@ -1,8 +1,3 @@
-
-
-
-
-
 #------------------------------------------------------------------------------------------------#
 #                                                                                                #
 #       Modifications for ActiveRecord                                                           #
@@ -26,7 +21,7 @@ class ActiveRecord::Base
   end
 
 
-  def self.create_class_part_of(class_reference)  #creation of a new class which inherits from ActiveRecord::Base
+  def self.create_class_clone(class_reference)  #creation of a new class which inherits from ActiveRecord::Base
 
     def class_reference.has_a_part_of?
       return true
@@ -44,13 +39,6 @@ class ActiveRecord::Base
 
 
 end
-
-
-
-
-
-
-
 
 #------------------------------------------------------------------------------------------------#
 #                                                                                                #
@@ -96,7 +84,7 @@ def CreateTheViewForCITIEs(theclass)  #function for creating views for migration
   if RAILS_ENV == 'development'
     puts "CreateTheView 1"
   end
-  self_columns = theclass::PartOf.column_names.select{ |c| c != "id" } 
+  self_columns = theclass::Clone.column_names.select{ |c| c != "id" } 
   if RAILS_ENV == 'development' 
     puts "CreateTheView 2"
   end
@@ -107,7 +95,7 @@ def CreateTheViewForCITIEs(theclass)  #function for creating views for migration
   end
   self_read_table = theclass.table_name
   # eventuellement warning si pas de part_of
-  self_write_table = theclass::PartOf.table_name
+  self_write_table = theclass::Clone.table_name
   parent_read_table = theclass.superclass.table_name
   if RAILS_ENV == 'development' 
     puts "CreateTheView 4"

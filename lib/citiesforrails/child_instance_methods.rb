@@ -5,7 +5,6 @@ module ChildInstanceMethods
     if(self.class.superclass==ActiveRecord::Base)
       #This is the highest class you can get to, just save the model
       cities_debug("Mother Class #{self.class.to_s}")
-      return self.class.save
     else
       # Non mother class, continue with saving parent etc
       cities_debug("Non-Mother Class #{self.class.to_s}")
@@ -39,7 +38,7 @@ module ChildInstanceMethods
     # If there are attributes for the current class (unique & not inherited) 
     # and parent(s) saved successfully, save current model
     if(!attributes_for_current.empty? && parent_saved)
-      current = self.class::PartOf.new(attributes_for_current) 
+      current = self.class::Clone.new(attributes_for_current) 
       current.id = parent.id
 
       if(!new_record?)
@@ -60,11 +59,6 @@ module ChildInstanceMethods
     return parent_saved && current_saved
   end
 
-  #call the class delete method with the id of the instance
-  def delete
-    cities_debug("1-> Delete #{self.class.name} with ID #{self.id}")
-    self.class.delete(self.id)
-  end
-
+  include InstanceMethods
 
 end
