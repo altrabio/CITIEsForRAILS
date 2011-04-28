@@ -45,7 +45,7 @@ class CreateProducts < ActiveRecord::Migration
     create_table :products do |t|
       t.string :type # Needed for citier
       t.string :name
-      t.integer :price
+      t.decimal :price
     end
   end
   def self.down
@@ -103,7 +103,7 @@ citier -> tablename (view) -> view_books
 citier -> Non Root Class
 citier -> table_name -> dictionaries
 citier -> tablename (view) -> view_dictionaries
- => #<Dictionary id: nil, type: "Dictionary", name: "Ox. Eng. Dict", price: 25, created_at: nil, updated_at: nil, title: "The Oxford English Dictionary", author: nil, language: "English"> 
+ => #<Dictionary id: nil, type: "Dictionary", name: "Ox. Eng. Dict", price: 25.99, created_at: nil, updated_at: nil, title: "The Oxford English Dictionary", author: nil, language: "English"> 
 >> :002 > d.save()
 citier -> Non-Root Class Dictionary
 citier -> Non-Root Class Book
@@ -112,11 +112,11 @@ citier -> SQL : UPDATE products SET type = 'Book' WHERE id = 1
 citier -> SQL : UPDATE products SET type = 'Dictionary' WHERE id = 1
  => true 
 >> :003 > Dictionary.all()
- => [#<Dictionary id: 1, type: "Dictionary", name: "Ox. Eng. Dict", price: 25, created_at: "2011-04-28 21:45:11", updated_at: "2011-04-28 21:45:11", title: "The Oxford English Dictionary", author: nil, language: "English">] 
+ => [#<Dictionary id: 1, type: "Dictionary", name: "Ox. Eng. Dict", price: 25.99, created_at: "2011-04-28 21:45:11", updated_at: "2011-04-28 21:45:11", title: "The Oxford English Dictionary", author: nil, language: "English">] 
 >> :004 > Product.all()
- => [#<Dictionary id: 1, type: "Dictionary", name: "Ox. Eng. Dict", price: 25, created_at: "2011-04-28 21:45:11", updated_at: "2011-04-28 21:45:11">] 
+ => [#<Dictionary id: 1, type: "Dictionary", name: "Ox. Eng. Dict", price: 25.99, created_at: "2011-04-28 21:45:11", updated_at: "2011-04-28 21:45:11">] 
 >> :005 > d = Dictionary.all().first()
- => #<Dictionary id: 1, type: "Dictionary", name: "Ox. Eng. Dict", price: 25, created_at: "2011-04-28 21:45:11", updated_at: "2011-04-28 21:45:11", title: "The Oxford English Dictionary", author: nil, language: "English"> 
+ => #<Dictionary id: 1, type: "Dictionary", name: "Ox. Eng. Dict", price: 25.99, created_at: "2011-04-28 21:45:11", updated_at: "2011-04-28 21:45:11", title: "The Oxford English Dictionary", author: nil, language: "English"> 
 >> :006 > d.delete()
 citier -> Deleting Dictionary with ID 1
 citier -> Deleting back up hierarchy Dictionary
