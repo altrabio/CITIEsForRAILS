@@ -3,12 +3,12 @@ title: User Guide
 layout: wikistyle
 ---
 
-CITIEsForRails User Guide
+CITIER User Guide
 =========================
 
-We give here the details to use our solution. Note that a functional web app implementing the multimedia library example is available here. It may be worth having a look at it since each specific code entry necessitated by the use of our plugin has been associated with a “#needed for CITIEsForRails" comment. Moreover some extra Comments & BookComments objects have been added to exhibit that Callbacks functionalities are also available (in fact every ActiveRecord facility should be available). Installing this app and getting into code may be a good way to understand how to use our gem.
+We give here the details to use our solution. Note that a functional web app implementing the multimedia library example is available here. It may be worth having a look at it since each specific code entry necessitated by the use of our plugin has been associated with a “#needed for CITIER" comment. Moreover some extra Comments & BookComments objects have been added to exhibit that Callbacks functionalities are also available (in fact every ActiveRecord facility should be available). Installing this app and getting into code may be a good way to understand how to use our gem.
 
-You should follow the next steps to use CITIEsForRails:
+You should follow the next steps to use CITIER:
 
 1. Model your class inheritance hierarchy [Our Example](problem.html)
 2. Once your class inheritance hierarchy is modeled : determine what we will call the *role* of each class. There are 3 kind of *roles*:
@@ -192,7 +192,7 @@ For our example, this mean that we need 5 views :
 
 7. Install our gem
 	{% highlight bash %}
-$ gem install CITIEsForRails
+$ gem install CITIER
 {% endhighlight %}
 
 Final Notes
