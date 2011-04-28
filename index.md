@@ -34,6 +34,7 @@ This solution already builds on ruby's class inheritance so brings with it all t
 - *Stuff which is really cool but I haven't thought of yet* - **Probably!**
 
 **Enough! This sounds awesome! Show me how it works!**
+
 Oh ok, go on then... ;)
 
 {% highlight ruby %}
