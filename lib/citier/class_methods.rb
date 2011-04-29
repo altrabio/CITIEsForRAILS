@@ -17,7 +17,7 @@ module ClassMethods
 
       citier_debug("Non Root Class")
       citier_debug("table_name -> #{table_name}")
-      
+
       # Set up the table which contains ALL attributes we want for this class
       set_table_name "view_#{table_name}"
 
@@ -35,12 +35,13 @@ module ClassMethods
       after_save :updatetype
 
       citier_debug("Root Class")
-      
+
       set_table_name "#{table_name}"
-      
+
       citier_debug("table_name -> #{self.table_name}")
 
-      def self.root_class #returns the root class (the highest inherited class before ActiveRecord) 
+      #returns the root class (the highest inherited class before ActiveRecord) 
+      def self.root_class
         if(self.superclass!=ActiveRecord::Base)  
           self.superclass.root_class
         else
@@ -50,10 +51,10 @@ module ClassMethods
 
       def self.find(*args) #overrides find to get all attributes  
         tuples = super
-        
+
         # in case of many objects, return an array of them, reloaded to pull in inherited attributes
         return tuples.map{|x| x.reload} if tuples.kind_of?(Array)
-        
+
         # in case of only one tuple, return it reloaded.
         # Can't use reload as would loop inifinitely, so do a search by id instead.
         # Probably a nice way of cleaning this a bit
