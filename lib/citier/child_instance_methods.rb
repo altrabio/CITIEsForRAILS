@@ -2,57 +2,45 @@ module ChildInstanceMethods
 
   def save
 
-    if(self.class.superclass==ActiveRecord::Base)
-      #This is the highest class you can get to, just save the model
-      citier_debug("Root Class #{self.class.to_s}")
-    else
-      # Non root class, continue with saving parent etc
-      citier_debug("Non-Root Class #{self.class.to_s}")
-    end
-
     #get the attributes of the class which are inherited from it's parent.
     attributes_for_parent = self.attributes.reject{|key,value| !self.class.superclass.column_names.include?(key) }
 
     # Get the attributes of the class which are unique to this class and not inherited.
     attributes_for_current = self.attributes.reject{|key,value| self.class.superclass.column_names.include?(key) }
 
+    citier_debug("Attributes for #{self.class.to_s}: #{attributes_for_current.inspect.to_s}")
+
     #create a new instance of the superclass, passing the inherited attributes.
     parent = self.class.superclass.new(attributes_for_parent)
+    parent.id = self.id
 
-    if(!new_record?)
-      parent.swap_new_record
-      parent.id = self.id
-    end
+    parent.is_new_record(new_record?)
 
-    # if(parent.class==parent.class.root_class)
-    # save the new parent instance (by calling its save method) 
     parent_saved = parent.save
-    # end
+    self.id = parent.id
 
     if(parent_saved==false)
       # Couldn't save parent class
-      # TODO: Handle if parent class could not be saved
+      # TODO: Handle situation where parent class could not be saved
       citier_debug("Class (#{self.class.superclass.to_s}) could not be saved")
     end
 
     # If there are attributes for the current class (unique & not inherited) 
     # and parent(s) saved successfully, save current model
     if(!attributes_for_current.empty? && parent_saved)
-      current = self.class::Writable.new(attributes_for_current) 
-      current.id = parent.id
-
-      if(!new_record?)
-        current.swap_new_record
-      end
-
+      current = self.class::Writable.new(attributes_for_current)
+      current.is_new_record(new_record?)
       current_saved = current.save
-      if(current_saved==false)
+      
+      # This is no longer a new record
+      is_new_record(false)
+
+      if(!current_saved)
         citier_debug("Class (#{self.class.superclass.to_s}) could not be saved")
       end
     end
 
-    self.id = parent.id
-
+    # Update root class with this 'type'
     sql = "UPDATE #{self.class.root_class.table_name} SET #{self.class.inheritance_column} = '#{self.class.to_s}' WHERE id = #{self.id}"
     citier_debug("SQL : #{sql}")
     self.connection.execute(sql)
@@ -60,5 +48,4 @@ module ChildInstanceMethods
   end
 
   include InstanceMethods
-
 end
