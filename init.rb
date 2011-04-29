@@ -1,1 +1,1 @@
-require 'citiesforrails'
+require 'citier'

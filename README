@@ -1,5 +1,5 @@
+CITIER (Class Inheritance & Table Inheritance Embeddings for Rails) is a solution for single and multiple class table inheritance.
+It is based on code by ALTRABio (www.github.com/altrabio/) and built upon/fixed/cleaned and evolved into to CITIER for my own (And potentially other's) needs
 
-CITIEsForRAILS (Class Inheritance & Table Inheritance Embeddings For RAILS) is a solution that extends Single/Multiple/Class Table Inheritance. This solution is based on classical Ruby class inheritance, single table inheritance as well as DB views.
-
-
-For Full Information GO TO : http://altrabio.github.com/CITIEsForRAILS/
+For full information: http://peterejhamilton.github.com/citier/
+For the original version by ALTRABio see www.github.com/altrabio/

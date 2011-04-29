@@ -2,14 +2,13 @@ require 'rubygems'
 require 'rake'
 require 'echoe'
 
-Echoe.new('CITIEsForRAILS', '0.0.5') do |p|
-  p.description    = "CITIEsForRAILS (Class Inheritance & Table Inheritance Embeddings For RAILS) is a solution that extends Single/Multiple/Class Table Inheritance. This solution is based on classical Ruby class inheritance, single table inheritance as well as DB views.
-
-
-  For Full Information GO TO : http://altrabio.github.com/CITIEsForRAILS/"
-  p.url            = "https://github.com/altrabio/CITIEsForRAILS"
-  p.author         = "Laurent Buffat & Pierre-Emmanuel JOUVE"
-  p.email          = "citiesforrails @nospam@ gmail.com"
-  p.ignore_pattern = ["tmp/*", "script/*"]
+Echoe.new('citier', '0.1.7') do |p|
+  p.description    = "CITIER (Class Inheritance & Table Inheritance Embeddings for Rails) is a solution for single and multiple class table inheritance.
+    For full information: http://peterejhamilton.github.com/citier/
+    For the original version by ALTRABio see www.github.com/altrabio/"
+  p.url            = "https://github.com/peterejhamilton/citier/"
+  p.author         = "Peter Hamilton, Original Authors - Laurent Buffat, Pierre-Emmanuel Jouve & "
+  p.email          = "peter@inspiredpixel.net"
+  p.ignore_pattern = ["tmp/*", "script/*", 'doc/*']
   p.development_dependencies = []
 end

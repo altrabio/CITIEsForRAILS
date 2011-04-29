@@ -1,5 +1,10 @@
 Rakefile
-lib/citiesforrails.rb
-lib/citiesforrails/acts_as_cities.rb
-lib/citiesforrails/core_ext.rb
+lib/citier.rb
+lib/citier/acts_as_citier.rb
+lib/citier/child_instance_methods.rb
+lib/citier/class_methods.rb
+lib/citier/core_ext.rb
+lib/citier/instance_methods.rb
+lib/citier/root_instance_methods.rb
+lib/citier/sql_adapters.rb
 Manifest
