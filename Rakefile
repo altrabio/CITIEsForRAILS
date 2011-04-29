@@ -2,7 +2,7 @@ require 'rubygems'
 require 'rake'
 require 'echoe'
 
-Echoe.new('citier', '0.1.6') do |p|
+Echoe.new('citier', '0.1.7') do |p|
   p.description    = "CITIER (Class Inheritance & Table Inheritance Embeddings for Rails) is a solution for single and multiple class table inheritance.
     For full information: http://peterejhamilton.github.com/citier/
     For the original version by ALTRABio see www.github.com/altrabio/"
