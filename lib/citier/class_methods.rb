@@ -49,16 +49,15 @@ module ClassMethods
       end
 
       def self.find(*args) #overrides find to get all attributes  
-
         tuples = super
-
-        # in case of several tuples just return the tuples as they are
-        return tuples if tuples.kind_of?(Array)
-
-        # in case of only one tuple, return a reloaded tuple based on the class of this tuple
-        tuples.class.where(tuples.class[:id].eq(tuples.id))[0]
-
-        #Was something about reload2 here as well but seems to work fine...?                                                       
+        
+        # in case of many objects, return an array of them, reloaded to pull in inherited attributes
+        return tuples.map{|x| x.reload} if tuples.kind_of?(Array)
+        
+        # in case of only one tuple, return it reloaded.
+        # Can't use reload as would loop inifinitely, so do a search by id instead.
+        # Probably a nice way of cleaning this a bit
+        return tuples.class.where(tuples.class[:id].eq(tuples.id))[0]
       end
 
       # Unlike destroy_all it is useful to override this method.
@@ -73,9 +72,5 @@ module ClassMethods
       # Add the functions required for root classes only
       send :include, RootInstanceMethods
     end
-
-
-
   end
-
 end  
