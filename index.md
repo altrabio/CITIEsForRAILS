@@ -162,7 +162,7 @@ citier -> SQL : UPDATE products SET type = 'Dictionary' WHERE id = 1
 >> :008 > Dictionary.all()
  => [#<Dictionary id: 1, type: "Dictionary", name: "Ox. Eng. Dict", price: 25, created_at: "2011-04-28 22:46:23", updated_at: "2011-04-28 22:46:23", title: "The Oxford English Dictionary", author: nil, language: "English">] 
 >> :009 > Product.all()
- => [#<Dictionary id: 1, type: "Dictionary", name: "Ox. Eng. Dict", price: 25, created_at: "2011-04-28 22:46:23", updated_at: "2011-04-28 22:46:23">] 
+ => [#<Dictionary id: 1, type: "Dictionary", name: "Ox. Eng. Dict", price: 25, created_at: "2011-04-28 22:46:23", updated_at: "2011-04-28 22:46:23", title: "The Oxford English Dictionary", author: nil, language: "English">] 
 >> :010 > d = Dictionary.all().first()
  => #<Dictionary id: 1, type: "Dictionary", name: "Ox. Eng. Dict", price: 25, created_at: "2011-04-28 22:46:23", updated_at: "2011-04-28 22:46:23", title: "The Oxford English Dictionary", author: nil, language: "English"> 
 >> :011 > d.delete()
