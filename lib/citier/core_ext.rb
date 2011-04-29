@@ -1,9 +1,3 @@
-#Needed to allow additonal module 'requires'
-path = File.expand_path(File.dirname(__FILE__))
-$LOAD_PATH.unshift(path) unless $LOAD_PATH.include?(path)
-
-require 'sql_adapters'
-
 class ActiveRecord::Base  
 
   def self.[](column_name) 
