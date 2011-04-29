@@ -1,9 +1,10 @@
 Rakefile
-lib/citierforrails.rb
-lib/citierforrails/acts_as_citier.rb
-lib/citierforrails/core_ext.rb
-lib/citierforrails/class_methods.rb
-lib/citierforrails/instance_methods.rb
-lib/citierforrails/child_instance_methods.rb
-lib/citierforrails/mother_instance_methods.rb
+lib/citier.rb
+lib/citier/acts_as_citier.rb
+lib/citier/child_instance_methods.rb
+lib/citier/class_methods.rb
+lib/citier/core_ext.rb
+lib/citier/instance_methods.rb
+lib/citier/root_instance_methods.rb
+lib/citier/sql_adapters.rb
 Manifest
