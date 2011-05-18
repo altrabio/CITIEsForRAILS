@@ -145,7 +145,7 @@ module Cities
 
     module InstanceMethods1
  
-      def save
+      def save #this gonna be used for the lowest level of hierarchy
 
     
         attributes_for_super = self.attributes.select{|key,value| self.class.superclass.column_names.include?(key) } #get the attributes of the class of the instance that also belong to its superclass 
@@ -153,6 +153,7 @@ module Cities
                                                                                                                         # these pieces of information should be stored in the table associated to the class of the instance
         herited = self.class.superclass.new(attributes_for_super)   #create a new instance of the superclass of the considered instance (self) 
         if(!new_record?)
+            puts "S1"
             herited.swap_new_record
             herited.id = self.id
         end
@@ -173,6 +174,7 @@ module Cities
           part_of.id = herited.id
 
           if(!new_record?)
+            puts "S2"
             part_of.swap_new_record
           end
 
@@ -184,7 +186,11 @@ module Cities
 
 
         self.id = herited.id
-    
+        
+        if(new_record?)
+          herited.swap_new_record;#this is very important for multi saving without reloading, if it was not there it would imply several savings in DB....
+        end
+        
         sql = "UPDATE #{self.class.mother_class.table_name} SET #{self.class.inheritance_column} = '#{self.class.to_s}' WHERE id = #{self.id}"
         if RAILS_ENV == 'development' 
           puts "SQL : #{sql}"
@@ -195,7 +201,7 @@ module Cities
 
 
 
-      def saveBis
+      def saveBis #this gonna be used for the intermediate level of hierarchy
 
 
         attributes_for_super = self.attributes.select{|key,value| self.class.superclass.column_names.include?(key) } #get the attributes of the class of the instance that also belong to its superclass 
@@ -203,6 +209,7 @@ module Cities
                                                                                                                         # these pieces of information should be stored in the table associated to the class of the instance
         herited = self.class.superclass.new(attributes_for_super)   #create a new instance of the superclass of the considered instance (self) 
         if(!new_record?)
+            puts "S3"          
             herited.swap_new_record
             herited.id = self.id
         end
@@ -224,6 +231,7 @@ module Cities
           part_of.id = herited.id
 
           if(!new_record?)
+            puts "S4"            
             part_of.swap_new_record
           end
 
@@ -273,9 +281,10 @@ module Cities
       def updatetype        
           sql = "UPDATE #{self.class.mother_class.table_name} SET #{self.class.inheritance_column} = '#{self.class.to_s}' WHERE id = #{self.id}"
           self.connection.execute(sql)
-          puts"#{sql}"      
+          puts"#{sql}"                
       end
-  
+      
+      
       def destroy
           super
           if self.class.respond_to?('has_a_part_of?')
