@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{CITIEsForRAILS}
-  s.version = "0.0.5"
+  s.version = "0.0.6"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Laurent Buffat & Pierre-Emmanuel JOUVE"]
-  s.date = %q{2011-04-20}
+  s.date = %q{2011-05-18}
   s.description = %q{CITIEsForRAILS (Class Inheritance & Table Inheritance Embeddings For RAILS) is a solution that extends Single/Multiple/Class Table Inheritance. This solution is based on classical Ruby class inheritance, single table inheritance as well as DB views.
 
 

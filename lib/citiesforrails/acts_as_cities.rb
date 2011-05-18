@@ -188,7 +188,7 @@ module Cities
         self.id = herited.id
         
         if(new_record?)
-          herited.swap_new_record;#this is very important for multi saving without reloading, if it was not there it would imply several savings in DB....
+          self.swap_new_record;#this is very important for multi saving without reloading, if it was not there it would imply several savings in DB....
         end
         
         sql = "UPDATE #{self.class.mother_class.table_name} SET #{self.class.inheritance_column} = '#{self.class.to_s}' WHERE id = #{self.id}"
